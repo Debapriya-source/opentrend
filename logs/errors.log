@@ -1,0 +1,17 @@
+2025-08-31 12:41:34 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:41:34 | ERROR    | app.main:lifespan:26 - Database connections failed
+2025-08-31 12:42:03 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:42:07 | ERROR    | app.database.connection:create_db_and_tables:33 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 12:43:26 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:43:30 | ERROR    | app.database.connection:create_db_and_tables:33 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 13:04:48 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials

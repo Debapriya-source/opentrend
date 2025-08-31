@@ -1,0 +1,227 @@
+# version: '3.8'
+
+# services:
+#   # PostgreSQL Database
+#   postgres:
+#     image: postgres:15-alpine
+#     environment:
+#       POSTGRES_DB: opentrend
+#       POSTGRES_USER: opentrend
+#       POSTGRES_PASSWORD: opentrend
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     ports:
+#       - "5432:5432"
+#     healthcheck:
+#       test: ["CMD-SHELL", "pg_isready -U opentrend"]
+#       interval: 10s
+#       timeout: 5s
+#       retries: 5
+
+#   # Redis Cache
+#   redis:
+#     image: redis:7-alpine
+#     ports:
+#       - "6379:6379"
+#     volumes:
+#       - redis_data:/data
+#     healthcheck:
+#       test: ["CMD", "redis-cli", "ping"]
+#       interval: 10s
+#       timeout: 5s
+#       retries: 5
+
+#   # InfluxDB (Optional - for time-series data)
+#   influxdb:
+#     image: influxdb:2.7-alpine
+#     environment:
+#       DOCKER_INFLUXDB_INIT_MODE: setup
+#       DOCKER_INFLUXDB_INIT_USERNAME: admin
+#       DOCKER_INFLUXDB_INIT_PASSWORD: adminpassword
+#       DOCKER_INFLUXDB_INIT_ORG: opentrend
+#       DOCKER_INFLUXDB_INIT_BUCKET: market_data
+#       DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: your-influxdb-token
+#     ports:
+#       - "8086:8086"
+#     volumes:
+#       - influxdb_data:/var/lib/influxdb2
+#     healthcheck:
+#       test: ["CMD", "influx", "ping"]
+#       interval: 30s
+#       timeout: 10s
+#       retries: 3
+
+#   # MinIO (Optional - for object storage)
+#   minio:
+#     image: minio/minio:latest
+#     environment:
+#       MINIO_ROOT_USER: minioadmin
+#       MINIO_ROOT_PASSWORD: minioadmin
+#     command: server /data --console-address ":9001"
+#     ports:
+#       - "9000:9000"
+#       - "9001:9001"
+#     volumes:
+#       - minio_data:/data
+#     healthcheck:
+#       test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+#       interval: 30s
+#       timeout: 10s
+#       retries: 3
+
+#   # OpenTrend AI Application
+#   app:
+#     build: .
+#     environment:
+#       - DATABASE_URL=postgresql://opentrend:opentrend@postgres:5432/opentrend
+#       - REDIS_URL=redis://redis:6379
+#       - INFLUXDB_URL=http://influxdb:8086
+#       - INFLUXDB_TOKEN=your-influxdb-token
+#       - INFLUXDB_ORG=opentrend
+#       - INFLUXDB_BUCKET=market_data
+#       - MINIO_ENDPOINT=minio:9000
+#       - MINIO_ACCESS_KEY=minioadmin
+#       - MINIO_SECRET_KEY=minioadmin
+#       - MINIO_BUCKET=opentrend
+#       - SECRET_KEY=your-super-secret-key-change-in-production
+#       - DEBUG=true
+#     ports:
+#       - "8000:8000"
+#     depends_on:
+#       postgres:
+#         condition: service_healthy
+#       redis:
+#         condition: service_healthy
+#     volumes:
+#       - ./logs:/app/logs
+#       - ./models:/app/models
+#     healthcheck:
+#       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+#       interval: 30s
+#       timeout: 10s
+#       retries: 3
+
+# volumes:
+#   postgres_data:
+#   redis_data:
+#   influxdb_data:
+#   minio_data:
+
+
+# docker-compose.yaml (Compose v2 — no `version:` key)
+
+services:
+  opentrend:
+    # Builds your app from the local Dockerfile
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # If you want to force a clean build sometimes:
+      # args:
+      #   - UV_NO_INSTALL_PROJECT=true
+    env_file:
+      - .env
+    # Expose your app port (change if your app uses a different one)
+    ports:
+      - "${APP_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+      influxdb:
+        condition: service_healthy
+    # Add any runtime env your app expects (or put them in .env)
+    environment:
+      # Database
+      - DATABASE_URL=postgresql+psycopg2://${POSTGRES_USER:-postgres}:${POSTGRES_PASSWORD:-postgres}@postgres:${POSTGRES_PORT:-5432}/${POSTGRES_DB:-opentrend}
+      # Redis
+      - REDIS_URL=redis://redis:6379/0
+      # MinIO (S3-compatible)
+      - S3_ENDPOINT=http://minio:9000
+      - S3_ACCESS_KEY_ID=${MINIO_ROOT_USER:-minioadmin}
+      - S3_SECRET_ACCESS_KEY=${MINIO_ROOT_PASSWORD:-minioadmin}
+      - S3_BUCKET=${MINIO_BUCKET:-opentrend}
+      # InfluxDB
+      - INFLUX_URL=http://influxdb:8086
+      - INFLUX_ORG=${INFLUX_ORG:-opentrend}
+      - INFLUX_BUCKET=${INFLUX_BUCKET:-metrics}
+      - INFLUX_TOKEN=${INFLUX_TOKEN:-dev-token}
+    # Mount your project during dev if you prefer live reloads (optional)
+    # volumes:
+    #   - .:/app
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-opentrend}
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-opentrend}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  minio:
+    image: minio/minio:latest   # ✅ use Docker Hub & a valid tag
+    command: server /data --console-address ":9001"
+    environment:
+      - MINIO_ROOT_USER=${MINIO_ROOT_USER:-minioadmin}
+      - MINIO_ROOT_PASSWORD=${MINIO_ROOT_PASSWORD:-minioadmin}
+    ports:
+      - "${MINIO_API_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    volumes:
+      - minio-data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/ready"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+
+  influxdb:
+    image: influxdb:2.7
+    ports:
+      - "${INFLUXDB_PORT:-8086}:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=${INFLUX_USERNAME:-admin}
+      - DOCKER_INFLUXDB_INIT_PASSWORD=${INFLUX_PASSWORD:-admin123}
+      - DOCKER_INFLUXDB_INIT_ORG=${INFLUX_ORG:-opentrend}
+      - DOCKER_INFLUXDB_INIT_BUCKET=${INFLUX_BUCKET:-metrics}
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=${INFLUX_TOKEN:-dev-token}
+    volumes:
+      - influx-data:/var/lib/influxdb2
+    healthcheck:
+      test: ["CMD", "influx", "ping", "--host", "http://localhost:8086"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  minio-data:
+  influx-data:

@@ -1,0 +1,52 @@
+2025-08-31 12:41:34 | INFO     | app.main:lifespan:19 - Starting OpenTrend AI application...
+2025-08-31 12:41:34 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:41:34 | ERROR    | app.main:lifespan:26 - Database connections failed
+2025-08-31 12:42:03 | INFO     | app.main:lifespan:19 - Starting OpenTrend AI application...
+2025-08-31 12:42:03 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:42:03 | WARNING  | app.main:lifespan:29 - Some database connections failed, but continuing for development
+2025-08-31 12:42:07 | ERROR    | app.database.connection:create_db_and_tables:33 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 12:42:07 | WARNING  | app.main:lifespan:38 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 12:42:07 | INFO     | app.main:lifespan:40 - OpenTrend AI application started successfully
+2025-08-31 12:43:07 | INFO     | app.main:lifespan:45 - Shutting down OpenTrend AI application...
+2025-08-31 12:43:26 | INFO     | app.main:lifespan:19 - Starting OpenTrend AI application...
+2025-08-31 12:43:26 | ERROR    | app.database.connection:test_connections:76 - Database connection test failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-31 12:43:26 | WARNING  | app.main:lifespan:29 - Some database connections failed, but continuing for development
+2025-08-31 12:43:30 | ERROR    | app.database.connection:create_db_and_tables:33 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 12:43:30 | WARNING  | app.main:lifespan:38 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-31 12:43:30 | INFO     | app.main:lifespan:40 - OpenTrend AI application started successfully
+2025-08-31 12:54:35 | INFO     | app.main:lifespan:19 - Starting OpenTrend AI application...
+2025-08-31 12:54:35 | INFO     | app.database.connection:test_connections:63 - SQLite connection successful
+2025-08-31 12:54:39 | WARNING  | app.database.connection:test_connections:73 - Redis connection failed (optional): Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-08-31 12:54:39 | INFO     | app.main:lifespan:27 - All database connections successful
+2025-08-31 12:54:41 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-08-31 12:54:41 | INFO     | app.main:lifespan:36 - Database tables created successfully
+2025-08-31 12:54:41 | INFO     | app.main:lifespan:40 - OpenTrend AI application started successfully
+2025-08-31 12:54:41 | INFO     | app.main:lifespan:45 - Shutting down OpenTrend AI application...
+2025-08-31 13:03:41 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-08-31 13:03:41 | INFO     | app.database.connection:test_connections:63 - SQLite connection successful
+2025-08-31 13:03:45 | WARNING  | app.database.connection:test_connections:73 - Redis connection failed (optional): Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-08-31 13:03:45 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-08-31 13:03:46 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-08-31 13:03:46 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-08-31 13:03:46 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-08-31 13:04:48 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials
