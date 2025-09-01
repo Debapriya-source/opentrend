@@ -15,3 +15,91 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 2025-08-31 13:04:48 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials
+2025-09-01 21:31:59 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 21:31:59 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 22:58:21 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 22:58:21 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:08:47 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:08:48 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:15:43 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:15:44 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:19:33 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:19:33 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:05 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:05 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:27 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:27 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:34 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:34 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:38 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:38 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:41 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:41 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:47 | ERROR    | app.database.connection:get_session:44 - Database session error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:47 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:47 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:26:00 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error generating prediction: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO predictions (symbol, prediction_type, predicted_value, confidence_interval_lower, confidence_interval_upper, prediction_date, model_used, features_used, created_at) VALUES (%(symbol)s, %(prediction_type)s, %(predicted_value)s, %(confidence_interval_lower)s, %(confidence_interval_upper)s, %(prediction_date)s, %(model_used)s, %(features_used)s, %(created_at)s) RETURNING predictions.id]
+[parameters: {'symbol': 'AAPL', 'prediction_type': 'price', 'predicted_value': np.float64(244.9372848120361), 'confidence_interval_lower': np.float64(227.3506925709517), 'confidence_interval_upper': np.float64(262.5238770531205), 'prediction_date': datetime.datetime(2025, 9, 1, 17, 56, 0, 254244), 'model_used': 'trend_extrapolation', 'features_used': {'trend': np.float64(0.9140918158848335), 'volatility': np.float64(0.020247327025577688)}, 'created_at': datetime.datetime(2025, 9, 1, 17, 56, 0, 254526)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:29:38 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error generating prediction: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO predictions (symbol, prediction_type, predicted_value, confidence_interval_lower, confidence_interval_upper, prediction_date, model_used, features_used, created_at) VALUES (%(symbol)s, %(prediction_type)s, %(predicted_value)s, %(confidence_interval_lower)s, %(confidence_interval_upper)s, %(prediction_date)s, %(model_used)s, %(features_used)s, %(created_at)s) RETURNING predictions.id]
+[parameters: {'symbol': 'AAPL', 'prediction_type': 'price', 'predicted_value': 244.9372848120361, 'confidence_interval_lower': 227.3506925709517, 'confidence_interval_upper': 262.5238770531205, 'prediction_date': datetime.datetime(2025, 9, 1, 17, 59, 38, 994011), 'model_used': 'trend_extrapolation', 'features_used': {'trend': 0.9140918158848335, 'volatility': 0.020247327025577688}, 'created_at': datetime.datetime(2025, 9, 1, 17, 59, 38, 994338)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:37:34 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for BHEL: 400: No market data available for symbol BHEL. Please check if the symbol is valid.
+2025-09-01 23:37:34 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for BHEL: 400: No market data available for symbol BHEL. Please check if the symbol is valid.
+2025-09-01 23:40:42 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for MCSFT: 400: No market data available for symbol MCSFT. Please check if the symbol is valid.
+2025-09-01 23:40:42 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for MCSFT: 400: No market data available for symbol MCSFT. Please check if the symbol is valid.
+2025-09-01 23:42:37 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for INVALID: 400: No market data available for symbol INVALID. Please check if the symbol is valid.
+2025-09-01 23:42:37 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for INVALID: 400: No market data available for symbol INVALID. Please check if the symbol is valid.
+2025-09-01 23:49:46 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 19, 46, 380643), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 19, 46, 381475)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:49:58 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 19, 58, 945523), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 19, 58, 946065)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:50:41 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 20, 41, 584610), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 20, 41, 585879)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-02 00:06:25 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials

@@ -107,7 +107,6 @@
 #   influxdb_data:
 #   minio_data:
 
-
 # docker-compose.yaml (Compose v2 — no `version:` key)
 
 services:
@@ -157,7 +156,7 @@ services:
   postgres:
     image: postgres:16
     ports:
-      - "${POSTGRES_PORT:-5432}:5432"
+      - "${POSTGRES_PORT:-5433}:5432"
     environment:
       - POSTGRES_DB=${POSTGRES_DB:-opentrend}
       - POSTGRES_USER=${POSTGRES_USER:-postgres}
@@ -183,7 +182,7 @@ services:
       retries: 10
     restart: unless-stopped
   minio:
-    image: minio/minio:latest   # ✅ use Docker Hub & a valid tag
+    image: minio/minio:latest # ✅ use Docker Hub & a valid tag
     command: server /data --console-address ":9001"
     environment:
       - MINIO_ROOT_USER=${MINIO_ROOT_USER:-minioadmin}
@@ -199,7 +198,6 @@ services:
       timeout: 5s
       retries: 12
     restart: unless-stopped
-
 
   influxdb:
     image: influxdb:2.7

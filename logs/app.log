@@ -50,3 +50,946 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2025-08-31 13:03:46 | INFO     | app.main:lifespan:37 - Database tables created successfully
 2025-08-31 13:03:46 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
 2025-08-31 13:04:48 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials
+2025-09-01 21:31:59 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 21:31:59 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 21:31:59 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 21:31:59 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 21:31:59 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 21:31:59 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 21:32:12 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 22:58:21 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 22:58:21 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 22:58:21 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 22:58:21 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 22:58:21 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 22:58:21 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:08:43 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:08:47 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:08:47 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:08:47 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 23:08:48 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:08:48 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:08:48 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:15:39 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:15:43 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:15:43 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:15:43 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 23:15:44 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:15:44 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:15:44 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:19:30 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:19:33 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:19:33 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:19:33 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 23:19:33 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:19:33 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:19:33 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:20:05 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:20:05 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:05 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 23:20:05 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:05 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:05 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:20:20 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:20:27 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:20:27 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:27 | WARNING  | app.main:lifespan:30 - Some database connections failed, but continuing for development
+2025-09-01 23:20:27 | ERROR    | app.database.connection:create_db_and_tables:34 - Error creating database tables: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:27 | WARNING  | app.main:lifespan:39 - Failed to create database tables, but continuing for development: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:20:27 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:21:04 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:21:11 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:21:11 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:21:11 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:21:11 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:21:11 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:21:11 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:21:11 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:21:34 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:34 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:38 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:38 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:41 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:41 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:21:47 | ERROR    | app.database.connection:get_session:44 - Database session error: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:47 | ERROR    | app.database.connection:test_connections:77 - Database connection test failed: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-09-01 23:21:47 | ERROR    | app.main:health_check:102 - Health check failed: 503: Database connection failed
+2025-09-01 23:23:06 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:24:05 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:24:05 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:24:05 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:24:05 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:24:05 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:24:05 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:24:05 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:24:24 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:24:24 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:25:33 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:25:33 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:25:36 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:25:36 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:25:37 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:25:37 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:25:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:96 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:25:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:103 - Existing data check for AAPL: Not found
+2025-09-01 23:25:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:107 - No existing data found for AAPL, starting data ingestion...
+2025-09-01 23:25:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:114 - Collecting market data for AAPL from 2024-09-01 17:55:59.064406 to 2025-09-01 17:55:59.064406
+2025-09-01 23:25:59 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for AAPL from 2024-09-01 17:55:59.064406 to 2025-09-01 17:55:59.064406
+2025-09-01 23:26:00 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 249 data points for AAPL
+2025-09-01 23:26:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:116 - Collected 249 data points for AAPL
+2025-09-01 23:26:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:139 - Successfully stored 249 data points for AAPL
+2025-09-01 23:26:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:150 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:26:00 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:26:00 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:26:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:153 - Prediction generation completed for AAPL
+2025-09-01 23:26:00 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error generating prediction: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO predictions (symbol, prediction_type, predicted_value, confidence_interval_lower, confidence_interval_upper, prediction_date, model_used, features_used, created_at) VALUES (%(symbol)s, %(prediction_type)s, %(predicted_value)s, %(confidence_interval_lower)s, %(confidence_interval_upper)s, %(prediction_date)s, %(model_used)s, %(features_used)s, %(created_at)s) RETURNING predictions.id]
+[parameters: {'symbol': 'AAPL', 'prediction_type': 'price', 'predicted_value': np.float64(244.9372848120361), 'confidence_interval_lower': np.float64(227.3506925709517), 'confidence_interval_upper': np.float64(262.5238770531205), 'prediction_date': datetime.datetime(2025, 9, 1, 17, 56, 0, 254244), 'model_used': 'trend_extrapolation', 'features_used': {'trend': np.float64(0.9140918158848335), 'volatility': np.float64(0.020247327025577688)}, 'created_at': datetime.datetime(2025, 9, 1, 17, 56, 0, 254526)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:27:54 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:27:57 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:27:57 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:27:57 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:27:57 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:27:57 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:27:57 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:27:57 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:28:59 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:29:02 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:29:02 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:29:02 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:29:02 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:29:02 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:29:02 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:29:02 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:29:22 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:29:22 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:29:22 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:29:22 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:29:22 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:29:22 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:29:22 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:29:38 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:96 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:29:38 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:103 - Existing data check for AAPL: Found
+2025-09-01 23:29:38 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:150 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:29:38 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:29:38 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:29:38 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:153 - Prediction generation completed for AAPL
+2025-09-01 23:29:38 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error generating prediction: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO predictions (symbol, prediction_type, predicted_value, confidence_interval_lower, confidence_interval_upper, prediction_date, model_used, features_used, created_at) VALUES (%(symbol)s, %(prediction_type)s, %(predicted_value)s, %(confidence_interval_lower)s, %(confidence_interval_upper)s, %(prediction_date)s, %(model_used)s, %(features_used)s, %(created_at)s) RETURNING predictions.id]
+[parameters: {'symbol': 'AAPL', 'prediction_type': 'price', 'predicted_value': 244.9372848120361, 'confidence_interval_lower': 227.3506925709517, 'confidence_interval_upper': 262.5238770531205, 'prediction_date': datetime.datetime(2025, 9, 1, 17, 59, 38, 994011), 'model_used': 'trend_extrapolation', 'features_used': {'trend': 0.9140918158848335, 'volatility': 0.020247327025577688}, 'created_at': datetime.datetime(2025, 9, 1, 17, 59, 38, 994338)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:29:59 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:29:59 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:30:02 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:30:02 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:30:03 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:30:03 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:30:03 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:30:03 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:30:03 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:30:03 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:30:03 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:30:04 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:30:07 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:30:07 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:30:07 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:30:07 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:30:07 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:30:07 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:30:07 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:30:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:30:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:30:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:30:35 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:30:35 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:30:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:30:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: MSFT
+2025-09-01 23:30:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for MSFT: Not found
+2025-09-01 23:30:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for MSFT, starting data ingestion...
+2025-09-01 23:30:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for MSFT from 2024-09-01 18:00:55.063943 to 2025-09-01 18:00:55.063943
+2025-09-01 23:30:55 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for MSFT from 2024-09-01 18:00:55.063943 to 2025-09-01 18:00:55.063943
+2025-09-01 23:30:56 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 249 data points for MSFT
+2025-09-01 23:30:56 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 249 data points for MSFT
+2025-09-01 23:30:56 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:140 - Successfully stored 249 data points for MSFT
+2025-09-01 23:30:56 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for MSFT
+2025-09-01 23:30:56 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for MSFT
+2025-09-01 23:30:56 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for MSFT: price
+2025-09-01 23:30:56 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for MSFT
+2025-09-01 23:31:19 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:31:19 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:31:22 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:31:22 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:31:22 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:31:22 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:31:22 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:31:22 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:31:22 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:32:41 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:32:41 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:32:41 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:32:41 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:32:41 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:32:41 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:32:41 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:33:01 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:33:01 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:33:15 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:33:15 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:33:15 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:33:15 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:33:15 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:33:15 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:37:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:37:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:37:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:37:01 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:37:01 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:37:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:37:03 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:37:03 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:37:03 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:37:03 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:37:03 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:37:03 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:37:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: BHEL
+2025-09-01 23:37:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for BHEL: Not found
+2025-09-01 23:37:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for BHEL, starting data ingestion...
+2025-09-01 23:37:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for BHEL from 2024-09-01 18:07:19.724139 to 2025-09-01 18:07:19.724139
+2025-09-01 23:37:19 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for BHEL from 2024-09-01 18:07:19.724139 to 2025-09-01 18:07:19.724139
+2025-09-01 23:37:34 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 0 data points for BHEL
+2025-09-01 23:37:34 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 0 data points for BHEL
+2025-09-01 23:37:34 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for BHEL: 400: No market data available for symbol BHEL. Please check if the symbol is valid.
+2025-09-01 23:37:34 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for BHEL: 400: No market data available for symbol BHEL. Please check if the symbol is valid.
+2025-09-01 23:38:24 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:38:24 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:38:24 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:38:24 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:38:24 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:38:24 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:38:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:38:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for AAPL: Found
+2025-09-01 23:38:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:38:32 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:38:32 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:38:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for AAPL
+2025-09-01 23:38:44 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:38:44 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:40:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: MCSFT
+2025-09-01 23:40:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for MCSFT: Not found
+2025-09-01 23:40:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for MCSFT, starting data ingestion...
+2025-09-01 23:40:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for MCSFT from 2024-09-01 18:10:40.208150 to 2025-09-01 18:10:40.208150
+2025-09-01 23:40:40 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for MCSFT from 2024-09-01 18:10:40.208150 to 2025-09-01 18:10:40.208150
+2025-09-01 23:40:42 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 0 data points for MCSFT
+2025-09-01 23:40:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 0 data points for MCSFT
+2025-09-01 23:40:42 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for MCSFT: 400: No market data available for symbol MCSFT. Please check if the symbol is valid.
+2025-09-01 23:40:42 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for MCSFT: 400: No market data available for symbol MCSFT. Please check if the symbol is valid.
+2025-09-01 23:41:41 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:41:45 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:41:45 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:41:45 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:41:45 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:41:45 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:41:45 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:41:45 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:42:00 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:42:03 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:42:03 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:42:03 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:42:03 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:42:03 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:42:03 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:42:03 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:42:05 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:42:05 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:42:05 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:42:05 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:42:05 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:42:05 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:42:05 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:42:07 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:42:09 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:42:09 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:42:09 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:42:09 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:42:09 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:42:09 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:42:09 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:42:12 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:42:12 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:42:12 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:42:12 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:42:12 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:42:12 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:42:12 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:42:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: GOOGL
+2025-09-01 23:42:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for GOOGL: Not found
+2025-09-01 23:42:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for GOOGL, starting data ingestion...
+2025-09-01 23:42:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for GOOGL from 2024-09-01 18:12:29.915748 to 2025-09-01 18:12:29.915748
+2025-09-01 23:42:29 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for GOOGL from 2024-09-01 18:12:29.915748 to 2025-09-01 18:12:29.915748
+2025-09-01 23:42:30 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 249 data points for GOOGL
+2025-09-01 23:42:30 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 249 data points for GOOGL
+2025-09-01 23:42:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:140 - Successfully stored 249 data points for GOOGL
+2025-09-01 23:42:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for GOOGL
+2025-09-01 23:42:31 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for GOOGL
+2025-09-01 23:42:31 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for GOOGL: price
+2025-09-01 23:42:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for GOOGL
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: TSLA
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for TSLA: Not found
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for TSLA, starting data ingestion...
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for TSLA from 2024-09-01 18:12:33.119567 to 2025-09-01 18:12:33.119567
+2025-09-01 23:42:33 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for TSLA from 2024-09-01 18:12:33.119567 to 2025-09-01 18:12:33.119567
+2025-09-01 23:42:33 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 249 data points for TSLA
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 249 data points for TSLA
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:140 - Successfully stored 249 data points for TSLA
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for TSLA
+2025-09-01 23:42:33 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for TSLA
+2025-09-01 23:42:33 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for TSLA: price
+2025-09-01 23:42:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for TSLA
+2025-09-01 23:42:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: INVALID
+2025-09-01 23:42:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for INVALID: Not found
+2025-09-01 23:42:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:108 - No existing data found for INVALID, starting data ingestion...
+2025-09-01 23:42:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:115 - Collecting market data for INVALID from 2024-09-01 18:12:35.817491 to 2025-09-01 18:12:35.817491
+2025-09-01 23:42:35 | INFO     | app.services.data_collector:collect_market_data:28 - Collecting market data for INVALID from 2024-09-01 18:12:35.817491 to 2025-09-01 18:12:35.817491
+2025-09-01 23:42:37 | INFO     | app.services.data_collector:collect_market_data:48 - Collected 0 data points for INVALID
+2025-09-01 23:42:37 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:117 - Collected 0 data points for INVALID
+2025-09-01 23:42:37 | ERROR    | app.api.v1.endpoints.analysis:generate_prediction:143 - Error during data ingestion for INVALID: 400: No market data available for symbol INVALID. Please check if the symbol is valid.
+2025-09-01 23:42:37 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error ingesting data for INVALID: 400: No market data available for symbol INVALID. Please check if the symbol is valid.
+2025-09-01 23:43:26 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: GOOGL
+2025-09-01 23:43:26 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for GOOGL: Found
+2025-09-01 23:43:26 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for GOOGL
+2025-09-01 23:43:26 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for GOOGL
+2025-09-01 23:43:26 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for GOOGL: price
+2025-09-01 23:43:26 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for GOOGL
+2025-09-01 23:43:34 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: TSLA
+2025-09-01 23:43:34 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for TSLA: Found
+2025-09-01 23:43:34 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for TSLA
+2025-09-01 23:43:34 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for TSLA
+2025-09-01 23:43:34 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for TSLA: price
+2025-09-01 23:43:34 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for TSLA
+2025-09-01 23:43:39 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: TSLA
+2025-09-01 23:43:39 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for TSLA: Found
+2025-09-01 23:43:39 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for TSLA
+2025-09-01 23:43:39 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for TSLA
+2025-09-01 23:43:39 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for TSLA: price
+2025-09-01 23:43:39 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for TSLA
+2025-09-01 23:44:23 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:97 - Starting prediction generation for symbol: TSLA
+2025-09-01 23:44:23 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:104 - Existing data check for TSLA: Found
+2025-09-01 23:44:23 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:151 - Starting prediction generation with AnalysisService for TSLA
+2025-09-01 23:44:23 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for TSLA
+2025-09-01 23:44:23 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for TSLA: price
+2025-09-01 23:44:23 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:154 - Prediction generation completed for TSLA
+2025-09-01 23:45:29 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:45:29 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:47:50 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:47:53 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:47:54 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:47:54 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:47:54 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:47:54 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:47:54 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:47:54 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:48:08 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:48:10 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:48:10 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:48:10 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:48:10 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:48:10 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:48:10 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:48:10 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:48:13 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:48:13 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:48:13 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:48:13 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:48:13 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:48:13 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:48:13 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:48:58 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:49:02 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:49:02 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:49:02 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:49:02 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:49:02 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:49:02 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:49:02 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:49:34 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:49:34 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:49:46 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-01 23:49:46 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-01 23:49:46 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 19, 46, 380643), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 19, 46, 381475)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:49:58 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-01 23:49:58 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-01 23:49:58 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 19, 58, 945523), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 19, 58, 946065)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:50:41 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-01 23:50:41 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-01 23:50:41 | ERROR    | app.database.connection:get_session:44 - Database session error: 500: Error analyzing trends: (psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO trend_analyses (symbol, trend_type, confidence_score, timeframe, analysis_date, indicators, description, created_at) VALUES (%(symbol)s, %(trend_type)s, %(confidence_score)s, %(timeframe)s, %(analysis_date)s, %(indicators)s, %(description)s, %(created_at)s) RETURNING trend_analyses.id]
+[parameters: {'symbol': 'AAPL', 'trend_type': 'bullish', 'confidence_score': 0.8, 'timeframe': 'medium', 'analysis_date': datetime.datetime(2025, 9, 1, 18, 20, 41, 584610), 'indicators': {'sma_20': np.float64(225.69991226196288), 'sma_50': np.float64(215.38138671875), 'ema_12': np.float64(228.6074055101288), 'ema_26': np.float64(223.94 ... (114 characters truncated) ... (243.9954872818799), 'bb_lower': np.float64(207.40433724204587), 'volume_sma': np.float64(55680780.0), 'volume_ratio': np.float64(0.7074146590618882)}, 'description': 'AAPL shows bullish momentum with strong technical indicators. Price is above key moving averages and MACD is positive. RSI at 60.4 indicates healthy momentum.', 'created_at': datetime.datetime(2025, 9, 1, 18, 20, 41, 585879)}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-01 23:51:01 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:51:05 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:51:05 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:51:05 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:51:05 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:51:05 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:51:05 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:51:05 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:51:29 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-01 23:51:29 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-01 23:52:53 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for MSFT with timeframe short
+2025-09-01 23:52:53 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for MSFT: bearish
+2025-09-01 23:52:55 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for GOOGL with timeframe short
+2025-09-01 23:52:55 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for GOOGL: neutral
+2025-09-01 23:53:21 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:53:25 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:53:25 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:53:25 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:53:25 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:53:25 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:53:25 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:53:25 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:53:37 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:53:42 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:53:42 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:53:42 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:53:42 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:53:42 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:53:42 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:53:42 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:53:46 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:53:46 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:53:46 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:53:46 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:53:46 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:53:46 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:53:46 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-01 23:53:49 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:53:49 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:53:57 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:53:57 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:54:00 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:54:00 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:54:01 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:54:01 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:54:21 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe long
+2025-09-01 23:54:21 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-01 23:54:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:40 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:40 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:40 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:54:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:51 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:51 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:54:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:54 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:54 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:54:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:55 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:55 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:55 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:54:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:58 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:58 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:54:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:54:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:54:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:54:59 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:54:59 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:54:59 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:01 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:01 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:01 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:02 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:02 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:02 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:02 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:02 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:02 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:04 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:04 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:04 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:04 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:04 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:04 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:06 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:06 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:06 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:06 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:06 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:06 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:08 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:08 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:08 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:08 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:08 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:08 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:11 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:11 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:55:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:55:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:55:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:55:19 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:55:19 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:55:19 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:57:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:57:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:57:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:57:32 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:57:32 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:57:32 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:57:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:57:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:57:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:57:33 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:57:33 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:57:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:57:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:57:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:57:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:57:35 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:57:35 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:57:35 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:57:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-01 23:57:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-01 23:57:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-01 23:57:36 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-01 23:57:36 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-01 23:57:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-01 23:58:44 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-01 23:58:49 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-01 23:58:49 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-01 23:58:49 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-01 23:58:49 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-01 23:58:49 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-01 23:58:49 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-01 23:58:49 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:02:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:02:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:02:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:02:47 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:02:47 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:02:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:03:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:03:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:03:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:03:11 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:03:11 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:03:11 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:05:32 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:05:37 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:05:37 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:05:37 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:05:37 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:05:37 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:05:37 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:05:37 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:06:06 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:06:10 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:06:10 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:06:10 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:06:10 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:06:10 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:06:10 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:06:10 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:06:25 | ERROR    | app.database.connection:get_session:44 - Database session error: 401: Could not validate credentials
+2025-09-02 00:07:36 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:07:40 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:07:40 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:07:40 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:07:40 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:07:40 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:07:40 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:07:40 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:07:44 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:07:48 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:07:48 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:07:49 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:07:49 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:07:49 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:07:49 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:07:49 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:08:15 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:08:19 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:08:19 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:08:19 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:08:19 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:08:19 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:08:19 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:08:19 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:09:40 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:09:45 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:09:45 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:09:45 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:09:45 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:09:45 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:09:45 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:09:45 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:10:02 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:10:06 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:10:06 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:10:06 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:10:06 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:10:06 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:10:06 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:10:06 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:10:11 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:10:11 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:10:11 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:10:11 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:10:11 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:10:11 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:10:11 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:10:45 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:10:49 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:10:49 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:10:49 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:10:49 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:10:49 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:10:49 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:10:49 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:11:17 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:11:21 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:11:21 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:11:21 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:11:21 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:11:21 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:11:21 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:11:21 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:12:11 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:12:15 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:12:15 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:12:15 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:12:15 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:12:15 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:12:15 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:12:15 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:12:46 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:12:50 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:12:50 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:12:50 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:12:50 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:12:50 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:12:50 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:12:50 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:13:07 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:13:12 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:13:12 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:13:12 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:13:12 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:13:12 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:13:12 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:13:12 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:13:31 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:13:36 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:13:36 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:13:36 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:13:36 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:13:36 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:13:36 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:13:36 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:17:10 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:17:15 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:17:15 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:17:15 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:17:15 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:17:15 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:17:15 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:17:15 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:20:38 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:20:42 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:20:42 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:20:42 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:20:42 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:20:42 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:20:42 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:20:42 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:21:23 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:21:28 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:21:28 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:21:28 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:21:28 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:21:28 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:21:28 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:21:28 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:21:32 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:21:32 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:21:32 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:21:32 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:21:32 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:21:32 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:21:32 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:21:37 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:21:37 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:21:37 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:21:37 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:21:37 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:21:37 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:21:37 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:22:09 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:22:13 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:22:13 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:22:13 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:22:13 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:22:13 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:22:13 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:22:13 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:22:22 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:22:26 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:22:26 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:22:27 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:22:27 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:22:27 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:22:27 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:22:27 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:22:38 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:22:42 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:22:42 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:22:42 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:22:42 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:22:42 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:22:42 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:22:42 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:22:46 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:22:50 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:22:51 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:22:51 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:22:51 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:22:51 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:22:51 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:22:51 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:23:41 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:23:45 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:23:45 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:23:45 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:23:45 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:23:45 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:23:45 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:23:45 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:28:56 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:29:00 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:29:00 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:29:00 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:29:00 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:29:00 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:29:00 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:29:00 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:29:46 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:29:46 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:30:10 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-02 00:30:10 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-02 00:30:17 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-02 00:30:17 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-02 00:30:19 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-02 00:30:19 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-02 00:30:30 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe short
+2025-09-02 00:30:30 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-02 00:30:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:30:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:30:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:30:36 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:30:36 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:30:36 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:30:45 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:30:45 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:30:45 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:30:45 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:30:45 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:30:45 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:30:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:30:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:30:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:30:47 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:30:47 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:30:47 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:30:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:30:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:30:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:30:49 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:30:49 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:30:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:30:53 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:30:53 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:30:53 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:30:53 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:30:53 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:30:53 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:17 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:17 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:17 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:17 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:17 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:17 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:20 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:20 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:21 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:21 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:21 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:21 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:21 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:21 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:22 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:22 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:22 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:22 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:22 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:22 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:27 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:27 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:27 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:27 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:27 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:27 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:42 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:42 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:31:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:31:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:31:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:31:51 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:31:51 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:31:51 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:54:12 | INFO     | app.main:lifespan:46 - Shutting down OpenTrend AI application...
+2025-09-02 00:54:15 | INFO     | app.main:lifespan:20 - Starting OpenTrend AI application...
+2025-09-02 00:54:15 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:54:15 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:54:15 | INFO     | app.main:lifespan:28 - All database connections successful
+2025-09-02 00:54:15 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-02 00:54:15 | INFO     | app.main:lifespan:37 - Database tables created successfully
+2025-09-02 00:54:15 | INFO     | app.main:lifespan:41 - OpenTrend AI application started successfully
+2025-09-02 00:54:29 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-02 00:54:29 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-02 00:54:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:54:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:54:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:54:49 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:54:49 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:54:49 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:55:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:55:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:55:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:55:00 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:55:00 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:55:00 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:56:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:56:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:56:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:56:29 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:56:29 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:56:29 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:56:37 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-02 00:56:37 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-02 00:56:37 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-02 00:56:37 | INFO     | app.services.analysis_service:generate_prediction:91 - Generating price prediction for AAPL
+2025-09-02 00:56:37 | INFO     | app.services.analysis_service:generate_prediction:139 - Prediction generated for AAPL: price
+2025-09-02 00:56:37 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-02 00:56:50 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-02 00:56:50 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for AAPL: bullish
+2025-09-02 00:57:08 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for TSLA with timeframe medium
+2025-09-02 00:57:08 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for TSLA: bullish
+2025-09-02 00:57:21 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for TSLA with timeframe long
+2025-09-02 00:57:21 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for TSLA: bullish

@@ -70,6 +70,11 @@ RUN pip install --no-cache-dir uv
 COPY pyproject.toml uv.lock README.md ./
 
 # Install dependencies only (skip installing local project now for better caching)
+# Increase timeout for large packages like PyTorch and set UV cache directory
+ENV UV_HTTP_TIMEOUT=300 \
+    UV_CACHE_DIR=/tmp/uv-cache \
+    UV_CONCURRENT_DOWNLOADS=4
+# Use CPU-only PyTorch for smaller image size (override GPU version from lock file)
 RUN uv sync --frozen --no-dev --no-install-project
 
 # Copy application code
@@ -79,6 +84,9 @@ COPY . .
 # Choose one of the following; keeping uv sync for consistency with lockfile:
 RUN uv sync --frozen --no-dev
 # Alternative: RUN uv pip install -e .
+
+# Clean up UV cache to reduce image size
+RUN rm -rf /tmp/uv-cache
 
 # Ensure runtime dirs exist
 RUN mkdir -p logs models
