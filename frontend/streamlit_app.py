@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
 # Minimal Streamlit frontend for OpenTrend AI (MVP)
 BASE_URL = st.secrets.get("backend_url", "http://localhost:8000")
@@ -32,7 +33,7 @@ if page == "Home":
         df = pd.DataFrame(
             {
                 "date": pd.date_range(end=pd.Timestamp.today(), periods=30),
-                "value": (pd.np.random.randn(30).cumsum() + 100),
+                "value": (np.random.randn(30).cumsum() + 100),
             }
         )
         fig = px.line(df, x="date", y="value", title="Sample price series")
