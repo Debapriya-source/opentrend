@@ -1,8 +1,7 @@
 """Database connection management."""
 
 from typing import Generator
-from sqlmodel import Session, create_engine, SQLModel
-from sqlalchemy import text
+from sqlmodel import Session, create_engine, SQLModel, text
 from redis import Redis
 from loguru import logger
 from app.core.config import settings

@@ -10,46 +10,29 @@ dependencies = [
     "uvicorn[standard]>=0.32.0",
     "pydantic>=2.10.0",
     "pydantic-settings>=2.8.0",
-    
-    
     # Data Processing & ML
     "pandas>=2.2.0",
     "numpy>=1.26.0",
     "scikit-learn>=1.5.0",
     "prophet>=1.1.5",
-    "tensorflow>=2.17.0",
     "torch>=2.3.0",
-    
     # NLP & Text Processing
-    "nltk>=3.9.0",
-    "spacy>=3.8.0",
     "transformers>=4.40.0",
     "vaderSentiment>=3.3.2",
-    
     # Database & Storage
     "sqlmodel>=0.0.20",
-    "psycopg2-binary>=2.9.0",
     "redis>=5.2.0",
     "influxdb-client>=1.40.0",
-    "minio>=7.2.0",
-    
     # Data Collection & APIs
     "yfinance>=0.2.0",
     "requests>=2.32.0",
-    "httpx>=0.28.0",
     "beautifulsoup4>=4.13.0",
     "feedparser>=6.0.11",
-    
     # Authentication & Security
     "python-jose[cryptography]>=3.3.0",
     "passlib[bcrypt]>=1.7.4",
-    "python-multipart>=0.0.20",
-    
     # Utilities
-    "python-dotenv>=1.0.0",
     "loguru>=0.7.0",
-    "pydantic-extra-types>=2.10.0",
-    
     # Frontend (MVP)
     "streamlit>=1.49.0",
     "plotly>=5.21.0",

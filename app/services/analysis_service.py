@@ -11,6 +11,7 @@ from loguru import logger
 from app.database.connection import engine
 
 from app.database.models import MarketData, NewsArticle
+from app.services.llm_service import llm_service
 
 
 class AnalysisService:
@@ -63,17 +64,31 @@ class AnalysisService:
             # Generate description
             description = self._generate_trend_description(symbol, trend_type, indicators)
 
-            result = {
-                "symbol": symbol,
-                "trend_type": trend_type,
-                "confidence_score": confidence_score,
-                "timeframe": timeframe,
-                "indicators": indicators,
-                "description": description,
-            }
-
-            logger.info(f"Trend analysis completed for {symbol}: {trend_type}")
-            return result
+            # Enhance with LLM insights
+            try:
+                llm_insights = llm_service.enhance_trend_analysis(symbol, indicators)
+                enhanced_result = {
+                    "symbol": symbol,
+                    "trend_type": trend_type,
+                    "confidence_score": confidence_score,
+                    "timeframe": timeframe,
+                    "indicators": indicators,
+                    "description": description,
+                    "llm_analysis": llm_insights,
+                }
+                logger.info(f"Enhanced trend analysis completed for {symbol}: {trend_type}")
+                return enhanced_result
+            except Exception as e:
+                logger.warning(f"LLM enhancement failed for {symbol}, returning basic analysis: {e}")
+                result = {
+                    "symbol": symbol,
+                    "trend_type": trend_type,
+                    "confidence_score": confidence_score,
+                    "timeframe": timeframe,
+                    "indicators": indicators,
+                    "description": description,
+                }
+                return result
 
         except Exception as e:
             logger.error(f"Error analyzing trends for {symbol}: {e}")

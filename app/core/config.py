@@ -29,13 +29,6 @@ class Settings(BaseSettings):
     influxdb_org: str = Field(default="opentrend", description="InfluxDB organization")
     influxdb_bucket: str = Field(default="metrics", description="InfluxDB bucket")
 
-    # MinIO
-    minio_endpoint: str = Field(default="localhost:9000", description="MinIO endpoint")
-    minio_access_key: Optional[str] = Field(default=None, description="MinIO access key")
-    minio_secret_key: Optional[str] = Field(default=None, description="MinIO secret key")
-    minio_bucket: str = Field(default="opentrend", description="MinIO bucket")
-    minio_secure: bool = Field(default=False, description="Use HTTPS for MinIO")
-
     # External APIs
     alpha_vantage_api_key: Optional[str] = Field(default=None, description="Alpha Vantage API key")
     news_api_key: Optional[str] = Field(default=None, description="News API key")
