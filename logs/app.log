@@ -993,3 +993,444 @@ connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection re
 2025-09-02 00:57:08 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for TSLA: bullish
 2025-09-02 00:57:21 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for TSLA with timeframe long
 2025-09-02 00:57:21 | INFO     | app.services.analysis_service:analyze_trends:79 - Trend analysis completed for TSLA: bullish
+2025-09-03 00:01:12 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 00:01:13 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 00:01:13 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 00:01:13 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 00:01:13 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 00:01:13 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 00:01:13 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 00:01:13 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 00:01:13 | INFO     | app.services.scheduler:start_scheduler:28 - Starting data scheduler...
+2025-09-03 00:01:13 | INFO     | app.services.scheduler:_market_data_updater:53 - Running scheduled market data update...
+2025-09-03 00:01:13 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for AAPL from 2025-08-26 18:31:13.135763 to 2025-09-02 18:31:13.135763
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for AAPL
+2025-09-03 00:01:15 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for AAPL
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for GOOGL from 2025-08-26 18:31:15.168974 to 2025-09-02 18:31:15.168974
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for GOOGL
+2025-09-03 00:01:15 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for GOOGL
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for MSFT from 2025-08-26 18:31:15.479624 to 2025-09-02 18:31:15.479624
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for MSFT
+2025-09-03 00:01:15 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for MSFT
+2025-09-03 00:01:15 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for TSLA from 2025-08-26 18:31:15.837799 to 2025-09-02 18:31:15.837799
+2025-09-03 00:01:16 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for TSLA
+2025-09-03 00:01:16 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for TSLA
+2025-09-03 00:01:16 | INFO     | app.services.scheduler:_market_data_updater:61 - Updated market data for 4 symbols
+2025-09-03 00:01:16 | INFO     | app.services.scheduler:_news_updater:73 - Running scheduled news update...
+2025-09-03 00:01:16 | INFO     | app.services.data_collector:collect_news_articles:59 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 00:01:19 | WARNING  | app.services.data_collector:_extract_article_content:176 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 00:01:23 | INFO     | app.services.data_collector:collect_news_articles:79 - Collected 3 news articles
+2025-09-03 00:01:23 | INFO     | app.services.scheduler:_news_updater:98 - Added 3 news articles
+2025-09-03 00:11:12 | INFO     | app.main:lifespan:53 - Shutting down OpenTrend AI application...
+2025-09-03 00:11:12 | INFO     | app.services.scheduler:stop_scheduler:41 - Stopping data scheduler...
+2025-09-03 00:11:12 | INFO     | app.main:lifespan:55 - Background data scheduler stopped
+2025-09-03 00:11:15 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 00:11:15 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 00:11:15 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 00:11:15 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 00:11:15 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 00:11:15 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 00:11:15 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 00:11:15 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 00:11:15 | INFO     | app.services.scheduler:start_scheduler:28 - Starting data scheduler...
+2025-09-03 00:11:15 | INFO     | app.services.scheduler:_market_data_updater:53 - Running scheduled market data update...
+2025-09-03 00:11:15 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for AAPL from 2025-08-26 18:41:15.882816 to 2025-09-02 18:41:15.882816
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for AAPL
+2025-09-03 00:11:18 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for AAPL
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for GOOGL from 2025-08-26 18:41:18.070295 to 2025-09-02 18:41:18.070295
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for GOOGL
+2025-09-03 00:11:18 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for GOOGL
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for MSFT from 2025-08-26 18:41:18.371010 to 2025-09-02 18:41:18.371010
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for MSFT
+2025-09-03 00:11:18 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for MSFT
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:27 - Collecting market data for TSLA from 2025-08-26 18:41:18.709090 to 2025-09-02 18:41:18.709090
+2025-09-03 00:11:18 | INFO     | app.services.data_collector:collect_market_data:47 - Collected 5 data points for TSLA
+2025-09-03 00:11:19 | INFO     | app.services.scheduler:_update_symbol_data:177 - Updated data for TSLA
+2025-09-03 00:11:19 | INFO     | app.services.scheduler:_market_data_updater:61 - Updated market data for 4 symbols
+2025-09-03 00:11:19 | INFO     | app.services.scheduler:_news_updater:73 - Running scheduled news update...
+2025-09-03 00:11:19 | INFO     | app.services.data_collector:collect_news_articles:59 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 00:11:21 | WARNING  | app.services.data_collector:_extract_article_content:176 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 00:11:24 | INFO     | app.services.data_collector:collect_news_articles:79 - Collected 3 news articles
+2025-09-03 00:11:25 | ERROR    | app.services.scheduler:_news_updater:102 - Error storing news articles: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_news_articles_url"
+DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video) already exists.
+
+[SQL: INSERT INTO news_articles (title, content, source, url, published_at, sentiment_score, sentiment_label, created_at, updated_at) SELECT p0::VARCHAR, p1::VARCHAR, p2::VARCHAR, p3::VARCHAR, p4::TIMESTAMP WITHOUT TIME ZONE, p5::FLOAT, p6::VARCHAR, p7::TI ... 613 characters truncated ...  p6, p7, p8, sen_counter) ORDER BY sen_counter RETURNING news_articles.id, news_articles.id AS id__1]
+[parameters: {'url__0': 'https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video', 'sentiment_score__0': None, 'created_at__0': datetime.datetime(2025, 9, 2, 18, 41, 24, 941705), 'updated_at__0': datetime.datetime(2025, 9, 2, 18, 41, 24, 941782), 'title__0': 'Trump-Tied Crypto Token Opens for Trading | Bloomberg Crypto 9/2/2025', 'source__0': 'Bloomberg Markets', 'sentiment_label__0': None, 'published_at__0': datetime.datetime(2025, 9, 2, 17, 52, 22), 'content__0': 'Live on Bloomberg TVCC-TranscriptOpenClose00:00WI > > I\'M SCARLET FU. TIM: I\'M TIM STENOVEC. WELCOME TO "BLOOMBERG CRYPTO." SCARLETT: A LOT OF THE  ... (4712 characters truncated) ... L. IT IS A LIKE A LOT OF OTHERS AND ASSOCIATED WITH AN EXCHANGE WE THINK IS GOING REALLY QUICKLY AND PROFITABLY. SCARLET: IS THAT A USE CASE? DAVID: ', 'url__1': 'https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video', 'sentiment_score__1': None, 'created_at__1': datetime.datetime(2025, 9, 2, 18, 41, 24, 942019), 'updated_at__1': datetime.datetime(2025, 9, 2, 18, 41, 24, 942083), 'title__1': 'Stocks Struggle to Start September | Open Interest 9/2/2025', 'source__1': 'Bloomberg Markets', 'sentiment_label__1': None, 'published_at__1': datetime.datetime(2025, 9, 2, 17, 3, 36), 'content__1': 'Get a jump start on the US trading day with Matt Miller and Dani Burger on "Bloomberg Open Interest." With summer now behind us, the market is lookin ... (274 characters truncated) ...  and beverage company. And Woodside Energy CEO Meg O’Neill joins Open Interest to discuss expanding energy investments in the US. (Source: Bloomberg)', 'url__2': 'https://www.ft.com/content/c1d7ba02-3983-4940-b3ef-1f4e28094fa7', 'sentiment_score__2': None, 'created_at__2': datetime.datetime(2025, 9, 2, 18, 41, 24, 942211), 'updated_at__2': datetime.datetime(2025, 9, 2, 18, 41, 24, 942270), 'title__2': 'Jane Street revenue eclipses $10bn in a quarter for first time', 'source__2': 'International homepage', 'sentiment_label__2': None, 'published_at__2': datetime.datetime(2025, 9, 2, 17, 6, 5), 'content__2': "Subscribe to readAccessibility helpSkip to navigationSkip to contentSkip to footerSign InSubscribeOpen side navigation menuOpen search barFinancial T ... (4702 characters truncated) ... ition: our digitised print editionPrint + Premium DigitalRs4500 per monthComplete digital access to quality analysis and expert insights, complemente"}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-03 00:45:03 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 00:45:08 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 00:45:09 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 00:45:09 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 00:45:09 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 00:45:09 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 00:45:09 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 00:45:09 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 00:45:09 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 00:45:09 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 00:45:09 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 00:45:09 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 00:45:09 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 00:45:09 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:15:09.691753 to 2025-09-02 19:15:09.691753
+2025-09-03 00:45:12 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 00:45:12 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for AAPL
+2025-09-03 00:45:12 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:15:12.935182 to 2025-09-02 19:15:12.935182
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 00:45:13 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for GOOGL
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:15:13.253559 to 2025-09-02 19:15:13.253559
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 00:45:13 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for MSFT
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:15:13.603038 to 2025-09-02 19:15:13.603038
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 00:45:13 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for TSLA
+2025-09-03 00:45:13 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 00:45:13 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 00:45:13 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 00:45:17 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 00:45:17 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 00:45:21 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 00:45:21 | ERROR    | app.services.scheduler:_news_updater:103 - Error storing news articles: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_news_articles_url"
+DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video) already exists.
+
+[SQL: INSERT INTO news_articles (title, content, source, url, published_at, sentiment_score, sentiment_label, created_at, updated_at) SELECT p0::VARCHAR, p1::VARCHAR, p2::VARCHAR, p3::VARCHAR, p4::TIMESTAMP WITHOUT TIME ZONE, p5::FLOAT, p6::VARCHAR, p7::TI ... 782 characters truncated ...  p6, p7, p8, sen_counter) ORDER BY sen_counter RETURNING news_articles.id, news_articles.id AS id__1]
+[parameters: {'sentiment_score__0': None, 'published_at__0': datetime.datetime(2025, 9, 2, 18, 49, 43), 'url__0': 'https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video', 'content__0': 'Live on Bloomberg TVCC-TranscriptOpenClose00:00When he was pretty shocked earlier to read a story about this specific token in the trading that debut ... (4159 characters truncated) ...  Funding Fight 02:42Anthropic Funding Round Boosts Valuation to $183 Billion01:34Von Der Leyen Plane Affected by Alleged Russian JammingSee all shows', 'sentiment_label__0': None, 'created_at__0': datetime.datetime(2025, 9, 2, 19, 15, 21, 713664), 'source__0': 'Bloomberg Markets', 'title__0': 'Trump-Tied Crypto Token Opens for Trading', 'updated_at__0': datetime.datetime(2025, 9, 2, 19, 15, 21, 714234), 'sentiment_score__1': None, 'published_at__1': datetime.datetime(2025, 9, 2, 17, 52, 22), 'url__1': 'https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video', 'content__1': '"Bloomberg Crypto" covers the people, transactions, and technology shaping the world of decentralized finance. Today\'s guests: Atlas Merchant Capital Founding Partner CIO David Schamis and JITO Labs Chief Legal Officer Rebecca Rettig. (Source: Bloomberg)', 'sentiment_label__1': None, 'created_at__1': datetime.datetime(2025, 9, 2, 19, 15, 21, 717397), 'source__1': 'Bloomberg Markets', 'title__1': 'Trump-Tied Crypto Token Opens for Trading | Bloomberg Crypto 9/2/2025', 'updated_at__1': datetime.datetime(2025, 9, 2, 19, 15, 21, 717758), 'sentiment_score__2': None, 'published_at__2': datetime.datetime(2025, 9, 2, 17, 3, 36), 'url__2': 'https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video', 'content__2': 'Get a jump start on the US trading day with Matt Miller and Dani Burger on "Bloomberg Open Interest." With summer now behind us, the market is lookin ... (274 characters truncated) ...  and beverage company. And Woodside Energy CEO Meg O’Neill joins Open Interest to discuss expanding energy investments in the US. (Source: Bloomberg)', 'sentiment_label__2': None, 'created_at__2': datetime.datetime(2025, 9, 2, 19, 15, 21, 719415), 'source__2': 'Bloomberg Markets', 'title__2': 'Stocks Struggle to Start September | Open Interest 9/2/2025', 'updated_at__2': datetime.datetime(2025, 9, 2, 19, 15, 21, 719766), 'sentiment_score__3': None, 'published_at__3': datetime.datetime(2025, 9, 2, 17, 6, 5), 'url__3': 'https://www.ft.com/content/c1d7ba02-3983-4940-b3ef-1f4e28094fa7', 'content__3': "Subscribe to readAccessibility helpSkip to navigationSkip to contentSkip to footerSign InSubscribeOpen side navigation menuOpen search barFinancial T ... (4702 characters truncated) ... ition: our digitised print editionPrint + Premium DigitalRs4500 per monthComplete digital access to quality analysis and expert insights, complemente", 'sentiment_label__3': None, 'created_at__3': datetime.datetime(2025, 9, 2, 19, 15, 21, 720452), 'source__3': 'International homepage', 'title__3': 'Jane Street revenue eclipses $10bn in a quarter for first time', 'updated_at__3': datetime.datetime(2025, 9, 2, 19, 15, 21, 723272)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-03 00:47:14 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 00:47:18 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 00:47:19 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 00:47:19 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 00:47:19 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 00:47:19 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 00:47:19 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 00:47:19 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 00:47:19 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 00:47:19 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 00:47:19 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 00:47:19 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 00:47:19 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 00:47:19 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:17:19.842560 to 2025-09-02 19:17:19.842560
+2025-09-03 00:47:21 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 00:47:21 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for AAPL
+2025-09-03 00:47:21 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:17:21.724355 to 2025-09-02 19:17:21.724355
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 00:47:22 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for GOOGL
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:17:22.066288 to 2025-09-02 19:17:22.066288
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 00:47:22 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for MSFT
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:17:22.439917 to 2025-09-02 19:17:22.439917
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 00:47:22 | INFO     | app.services.scheduler:_update_symbol_data:190 - No new data points for TSLA
+2025-09-03 00:47:22 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 00:47:22 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 00:47:22 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 00:47:26 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 00:47:27 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 00:47:31 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 00:47:31 | ERROR    | app.services.scheduler:_news_updater:103 - Error storing news articles: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "ix_news_articles_url"
+DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video) already exists.
+
+[SQL: INSERT INTO news_articles (title, content, source, url, published_at, sentiment_score, sentiment_label, created_at, updated_at) SELECT p0::VARCHAR, p1::VARCHAR, p2::VARCHAR, p3::VARCHAR, p4::TIMESTAMP WITHOUT TIME ZONE, p5::FLOAT, p6::VARCHAR, p7::TI ... 782 characters truncated ...  p6, p7, p8, sen_counter) ORDER BY sen_counter RETURNING news_articles.id, news_articles.id AS id__1]
+[parameters: {'title__0': 'Trump-Tied Crypto Token Opens for Trading', 'content__0': 'Live on Bloomberg TVCC-TranscriptOpenClose00:00When he was pretty shocked earlier to read a story about this specific token in the trading that debut ... (4159 characters truncated) ...  Funding Fight 02:42Anthropic Funding Round Boosts Valuation to $183 Billion01:34Von Der Leyen Plane Affected by Alleged Russian JammingSee all shows', 'sentiment_score__0': None, 'source__0': 'Bloomberg Markets', 'created_at__0': datetime.datetime(2025, 9, 2, 19, 17, 31, 358657), 'sentiment_label__0': None, 'published_at__0': datetime.datetime(2025, 9, 2, 18, 49, 43), 'url__0': 'https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video', 'updated_at__0': datetime.datetime(2025, 9, 2, 19, 17, 31, 359123), 'title__1': 'Trump-Tied Crypto Token Opens for Trading | Bloomberg Crypto 9/2/2025', 'content__1': '"Bloomberg Crypto" covers the people, transactions, and technology shaping the world of decentralized finance. Today\'s guests: Atlas Merchant Capital Founding Partner CIO David Schamis and JITO Labs Chief Legal Officer Rebecca Rettig. (Source: Bloomberg)', 'sentiment_score__1': None, 'source__1': 'Bloomberg Markets', 'created_at__1': datetime.datetime(2025, 9, 2, 19, 17, 31, 360283), 'sentiment_label__1': None, 'published_at__1': datetime.datetime(2025, 9, 2, 17, 52, 22), 'url__1': 'https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video', 'updated_at__1': datetime.datetime(2025, 9, 2, 19, 17, 31, 360576), 'title__2': 'Stocks Struggle to Start September | Open Interest 9/2/2025', 'content__2': 'Get a jump start on the US trading day with Matt Miller and Dani Burger on "Bloomberg Open Interest." With summer now behind us, the market is lookin ... (274 characters truncated) ...  and beverage company. And Woodside Energy CEO Meg O’Neill joins Open Interest to discuss expanding energy investments in the US. (Source: Bloomberg)', 'sentiment_score__2': None, 'source__2': 'Bloomberg Markets', 'created_at__2': datetime.datetime(2025, 9, 2, 19, 17, 31, 361183), 'sentiment_label__2': None, 'published_at__2': datetime.datetime(2025, 9, 2, 17, 3, 36), 'url__2': 'https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video', 'updated_at__2': datetime.datetime(2025, 9, 2, 19, 17, 31, 361457), 'title__3': 'Jane Street revenue eclipses $10bn in a quarter for first time', 'content__3': "Subscribe to readAccessibility helpSkip to navigationSkip to contentSkip to footerSign InSubscribeOpen side navigation menuOpen search barFinancial T ... (4702 characters truncated) ... ition: our digitised print editionPrint + Premium DigitalRs4500 per monthComplete digital access to quality analysis and expert insights, complemente", 'sentiment_score__3': None, 'source__3': 'International homepage', 'created_at__3': datetime.datetime(2025, 9, 2, 19, 17, 31, 361945), 'sentiment_label__3': None, 'published_at__3': datetime.datetime(2025, 9, 2, 17, 6, 5), 'url__3': 'https://www.ft.com/content/c1d7ba02-3983-4940-b3ef-1f4e28094fa7', 'updated_at__3': datetime.datetime(2025, 9, 2, 19, 17, 31, 362191)}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-03 01:00:57 | INFO     | app.main:lifespan:53 - Shutting down OpenTrend AI application...
+2025-09-03 01:00:57 | INFO     | app.services.scheduler:stop_scheduler:42 - Stopping data scheduler...
+2025-09-03 01:00:57 | INFO     | app.main:lifespan:55 - Background data scheduler stopped
+2025-09-03 01:01:03 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:01:04 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:01:04 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:01:04 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:01:04 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:01:04 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:01:04 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:01:04 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:01:04 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:01:04 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:01:04 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:01:04 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:01:04 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:31:04.976986 to 2025-09-02 19:31:04.976986
+2025-09-03 01:01:06 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:01:06 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:01:06 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:31:06.756106 to 2025-09-02 19:31:06.756106
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:01:07 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:31:07.096478 to 2025-09-02 19:31:07.096478
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:01:07 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:31:07.464088 to 2025-09-02 19:31:07.464088
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:01:07 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:01:07 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:01:07 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:01:07 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:01:10 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:01:11 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 01:01:15 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 01:01:15 | INFO     | app.services.scheduler:_news_updater:108 - Added 1 new news articles (skipped 3 duplicates)
+2025-09-03 01:01:20 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:01:22 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:01:22 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:01:22 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:01:22 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:01:22 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:01:22 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:01:22 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:01:22 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:01:22 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:01:22 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:01:22 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:01:22 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:31:22.245403 to 2025-09-02 19:31:22.245403
+2025-09-03 01:01:23 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:01:23 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:01:23 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:31:23.577754 to 2025-09-02 19:31:23.577754
+2025-09-03 01:01:23 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:01:23 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:01:23 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:31:23.918041 to 2025-09-02 19:31:23.918041
+2025-09-03 01:01:24 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:01:24 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:01:24 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:31:24.300979 to 2025-09-02 19:31:24.300979
+2025-09-03 01:01:24 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:01:24 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:01:24 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:01:24 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:01:24 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:01:26 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 01:01:27 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:01:28 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 01:01:32 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 01:01:32 | INFO     | app.services.scheduler:_news_updater:108 - Added 0 new news articles (skipped 4 duplicates)
+2025-09-03 01:01:37 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:01:38 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:01:38 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:01:38 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:01:38 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:01:38 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:01:38 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:01:38 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:01:38 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:01:38 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:01:38 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:01:38 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:01:38 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:31:38.325827 to 2025-09-02 19:31:38.325827
+2025-09-03 01:01:39 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:01:39 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:01:39 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:31:39.576748 to 2025-09-02 19:31:39.576748
+2025-09-03 01:01:39 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:01:39 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:01:39 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:31:39.883951 to 2025-09-02 19:31:39.883951
+2025-09-03 01:01:40 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:01:40 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:01:40 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:31:40.235992 to 2025-09-02 19:31:40.235992
+2025-09-03 01:01:40 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:01:40 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:01:40 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:01:40 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:01:40 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:01:42 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 01:01:43 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:01:44 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 01:01:46 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 01:01:47 | INFO     | app.services.scheduler:_news_updater:108 - Added 0 new news articles (skipped 4 duplicates)
+2025-09-03 01:05:31 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:05:36 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:05:37 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:05:37 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:05:37 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:05:37 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:05:37 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:05:37 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:05:37 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:05:37 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:05:37 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:05:37 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:05:37 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:05:37 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:35:37.298621 to 2025-09-02 19:35:37.298621
+2025-09-03 01:05:38 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:05:38 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:05:38 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:35:38.771334 to 2025-09-02 19:35:38.771334
+2025-09-03 01:05:38 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:05:38 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:05:38 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:35:38.938976 to 2025-09-02 19:35:38.938976
+2025-09-03 01:05:39 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:05:39 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:05:39 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:35:39.128933 to 2025-09-02 19:35:39.128933
+2025-09-03 01:05:39 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:05:39 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:05:39 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:05:39 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:05:39 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:05:41 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:05:42 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 01:05:45 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 01:05:45 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 4 duplicates)
+2025-09-03 01:05:49 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:05:50 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:05:50 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:05:50 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:05:50 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:05:50 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:05:51 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:05:51 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:05:51 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:05:51 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:05:51 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:05:51 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:05:51 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:35:51.040828 to 2025-09-02 19:35:51.040828
+2025-09-03 01:05:52 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:05:52 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:05:52 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:35:52.427981 to 2025-09-02 19:35:52.427981
+2025-09-03 01:05:52 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:05:52 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:05:52 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:35:52.679907 to 2025-09-02 19:35:52.679907
+2025-09-03 01:05:52 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:05:53 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:05:53 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:35:53.008881 to 2025-09-02 19:35:53.008881
+2025-09-03 01:05:53 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:05:53 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:05:53 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:05:53 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:05:53 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:05:55 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 01:05:55 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:05:56 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/open-interest-9-2-2025-video
+2025-09-03 01:06:00 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
+2025-09-03 01:06:00 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 4 duplicates)
+2025-09-03 01:20:56 | INFO     | app.main:lifespan:53 - Shutting down OpenTrend AI application...
+2025-09-03 01:20:56 | INFO     | app.services.scheduler:stop_scheduler:42 - Stopping data scheduler...
+2025-09-03 01:20:56 | INFO     | app.main:lifespan:55 - Background data scheduler stopped
+2025-09-03 01:21:02 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:21:03 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:21:03 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:21:03 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:21:03 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:21:03 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:21:03 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:21:03 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:21:03 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:21:03 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:21:03 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:21:03 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:21:03 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:51:03.273078 to 2025-09-02 19:51:03.273078
+2025-09-03 01:21:04 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:51:05.011312 to 2025-09-02 19:51:05.011312
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:51:05.322343 to 2025-09-02 19:51:05.322343
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:51:05.654576 to 2025-09-02 19:51:05.654576
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:21:05 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:21:05 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:21:08 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:21:10 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 3 news articles
+2025-09-03 01:21:10 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 3 duplicates)
+2025-09-03 01:21:15 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:21:16 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:21:16 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:21:16 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:21:16 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:21:16 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:21:16 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:21:16 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:21:16 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:21:16 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:21:16 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:21:16 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:21:16 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:51:16.596895 to 2025-09-02 19:51:16.596895
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:21:18 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:51:18.221618 to 2025-09-02 19:51:18.221618
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:21:18 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:51:18.545175 to 2025-09-02 19:51:18.545175
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:21:18 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:21:18 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:51:18.890651 to 2025-09-02 19:51:18.890651
+2025-09-03 01:21:19 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:21:19 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:21:19 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:21:19 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:21:19 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:21:20 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 01:21:21 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:21:24 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 3 news articles
+2025-09-03 01:21:24 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 3 duplicates)
+2025-09-03 01:21:28 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 01:21:29 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 01:21:29 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:21:29 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:21:29 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:21:29 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 01:21:29 | INFO     | app.database.connection:create_db_and_tables:32 - Database tables created successfully
+2025-09-03 01:21:29 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 01:21:29 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 01:21:29 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 01:21:29 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 01:21:29 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 01:21:29 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 19:51:29.493716 to 2025-09-02 19:51:29.493716
+2025-09-03 01:21:31 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for AAPL
+2025-09-03 01:21:31 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 01:21:31 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 19:51:31.494728 to 2025-09-02 19:51:31.494728
+2025-09-03 01:21:31 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for GOOGL
+2025-09-03 01:21:31 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 01:21:31 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 19:51:31.846857 to 2025-09-02 19:51:31.846857
+2025-09-03 01:21:32 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for MSFT
+2025-09-03 01:21:32 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 01:21:32 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 19:51:32.211149 to 2025-09-02 19:51:32.211149
+2025-09-03 01:21:32 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 5 data points for TSLA
+2025-09-03 01:21:32 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 01:21:32 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 01:21:32 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 01:21:32 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 01:21:35 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 01:21:35 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
+2025-09-03 01:21:39 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 3 news articles
+2025-09-03 01:21:39 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 3 duplicates)
+2025-09-03 01:22:02 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:22:02 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:22:02 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:22:10 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:22:10 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:22:10 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:22:13 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:22:13 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:22:13 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:22:14 | INFO     | app.database.connection:test_connections:66 - PostgreSQL connection successful
+2025-09-03 01:22:14 | INFO     | app.database.connection:test_connections:71 - Redis connection successful
+2025-09-03 01:22:14 | INFO     | app.database.connection:test_connections:80 - InfluxDB connection successful
+2025-09-03 01:22:26 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-03 01:22:26 | INFO     | app.services.analysis_service:analyze_trends:75 - Trend analysis completed for AAPL: bullish
+2025-09-03 01:22:39 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-03 01:22:39 | INFO     | app.services.analysis_service:analyze_trends:75 - Trend analysis completed for AAPL: bullish
+2025-09-03 01:22:41 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-03 01:22:41 | INFO     | app.services.analysis_service:analyze_trends:75 - Trend analysis completed for AAPL: bullish
+2025-09-03 01:22:43 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe medium
+2025-09-03 01:22:43 | INFO     | app.services.analysis_service:analyze_trends:75 - Trend analysis completed for AAPL: bullish
+2025-09-03 01:22:49 | INFO     | app.services.analysis_service:analyze_trends:26 - Analyzing trends for AAPL with timeframe long
+2025-09-03 01:22:50 | INFO     | app.services.analysis_service:analyze_trends:75 - Trend analysis completed for AAPL: bullish
+2025-09-03 01:23:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-03 01:23:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-03 01:23:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-03 01:23:20 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
+2025-09-03 01:23:20 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
+2025-09-03 01:23:20 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-03 01:23:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-03 01:23:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-03 01:23:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-03 01:23:31 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
+2025-09-03 01:23:31 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
+2025-09-03 01:23:31 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-03 01:23:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-03 01:23:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-03 01:23:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-03 01:23:33 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
+2025-09-03 01:23:33 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
+2025-09-03 01:23:33 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-03 01:23:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-03 01:23:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-03 01:23:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-03 01:23:42 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
+2025-09-03 01:23:42 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
+2025-09-03 01:23:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL

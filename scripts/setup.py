@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Setup script for OpenTrend AI application."""
 
-import os
 import sys
 import subprocess
 from pathlib import Path
@@ -11,7 +10,7 @@ def run_command(command: str, description: str) -> bool:
     """Run a shell command and return success status."""
     print(f"🔄 {description}...")
     try:
-        result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
+        _result = subprocess.run(command, shell=True, check=True, capture_output=True, text=True)
         print(f"✅ {description} completed successfully")
         return True
     except subprocess.CalledProcessError as e:
@@ -44,23 +43,23 @@ def setup_environment() -> bool:
     """Setup environment file."""
     env_file = Path(".env")
     env_example = Path("env.example")
-    
+
     if env_file.exists():
         print("✅ .env file already exists")
         return True
-    
+
     if not env_example.exists():
         print("❌ env.example file not found")
         return False
-    
+
     print("📝 Creating .env file from template...")
     try:
-        with open(env_example, 'r') as f:
+        with open(env_example, "r") as f:
             content = f.read()
-        
-        with open(env_file, 'w') as f:
+
+        with open(env_file, "w") as f:
             f.write(content)
-        
+
         print("✅ .env file created. Please edit it with your configuration.")
         return True
     except Exception as e:
@@ -76,10 +75,10 @@ def install_dependencies() -> bool:
 def create_directories() -> bool:
     """Create necessary directories."""
     directories = ["logs", "models", "data"]
-    
+
     for directory in directories:
         Path(directory).mkdir(exist_ok=True)
-    
+
     print("✅ Created necessary directories")
     return True
 
@@ -88,26 +87,26 @@ def main():
     """Main setup function."""
     print("🚀 OpenTrend AI Setup")
     print("=" * 50)
-    
+
     # Check prerequisites
     if not check_python_version():
         sys.exit(1)
-    
+
     if not check_uv_installation():
         sys.exit(1)
-    
+
     # Setup environment
     if not setup_environment():
         sys.exit(1)
-    
+
     # Install dependencies
     if not install_dependencies():
         sys.exit(1)
-    
+
     # Create directories
     if not create_directories():
         sys.exit(1)
-    
+
     print("\n🎉 Setup completed successfully!")
     print("\nNext steps:")
     print("1. Edit .env file with your configuration")
@@ -118,4 +117,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

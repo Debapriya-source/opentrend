@@ -11,6 +11,7 @@ from app.core.config import settings
 from app.core.logging import setup_logging
 from app.database.connection import create_db_and_tables, test_connections
 from app.api.v1.api import api_router
+from app.services.scheduler import scheduler
 
 
 @asynccontextmanager
@@ -18,10 +19,10 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """Application lifespan events."""
     # Startup
     logger.info("Starting OpenTrend AI application...")
-    
+
     # Setup logging
     setup_logging()
-    
+
     # Test database connections (optional for development)
     try:
         if test_connections():
@@ -30,20 +31,28 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
             logger.warning("Some database connections failed, but continuing for development")
     except Exception as e:
         logger.warning(f"Database connection test failed, but continuing for development: {e}")
-    
+
     # Create database tables
     try:
         create_db_and_tables()
         logger.info("Database tables created successfully")
     except Exception as e:
         logger.warning(f"Failed to create database tables, but continuing for development: {e}")
-    
+
+    # Start background scheduler for data collection
+    import asyncio
+
+    asyncio.create_task(scheduler.start_scheduler())
+    logger.info("Background data scheduler started")
+
     logger.info("OpenTrend AI application started successfully")
-    
+
     yield
-    
+
     # Shutdown
     logger.info("Shutting down OpenTrend AI application...")
+    await scheduler.stop_scheduler()
+    logger.info("Background data scheduler stopped")
 
 
 # Create FastAPI application
@@ -123,4 +132,3 @@ async def info() -> dict:
             "Real-time insights",
         ],
     }
-

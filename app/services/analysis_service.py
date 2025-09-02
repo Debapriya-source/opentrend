@@ -1,11 +1,11 @@
 """Analysis service for trend analysis, predictions, and sentiment analysis."""
 
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
-from sqlmodel import Session
+from sqlmodel import Session, desc
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from loguru import logger
 from app.database.connection import engine
@@ -40,10 +40,8 @@ class AnalysisService:
 
                 query = (
                     select(MarketData)
-                    .where(
-                        MarketData.symbol == symbol, MarketData.timestamp >= start_date
-                    )
-                    .order_by(MarketData.timestamp)
+                    .where(MarketData.symbol == symbol, MarketData.timestamp >= start_date)
+                    .order_by("timestamp")
                 )
 
                 data_points = session.exec(query).all()
@@ -63,9 +61,7 @@ class AnalysisService:
             trend_type, confidence_score = self._determine_trend(df, indicators)
 
             # Generate description
-            description = self._generate_trend_description(
-                symbol, trend_type, indicators
-            )
+            description = self._generate_trend_description(symbol, trend_type, indicators)
 
             result = {
                 "symbol": symbol,
@@ -97,10 +93,8 @@ class AnalysisService:
                 start_date = datetime.utcnow() - timedelta(days=365)
                 query = (
                     select(MarketData)
-                    .where(
-                        MarketData.symbol == symbol, MarketData.timestamp >= start_date
-                    )
-                    .order_by(MarketData.timestamp)
+                    .where(MarketData.symbol == symbol, MarketData.timestamp >= start_date)
+                    .order_by("timestamp")
                 )
 
                 data_points = session.exec(query).all()
@@ -126,12 +120,8 @@ class AnalysisService:
                 "symbol": symbol,
                 "prediction_type": prediction_type,
                 "predicted_value": prediction_result["predicted_value"],
-                "confidence_interval_lower": prediction_result[
-                    "confidence_interval_lower"
-                ],
-                "confidence_interval_upper": prediction_result[
-                    "confidence_interval_upper"
-                ],
+                "confidence_interval_lower": prediction_result["confidence_interval_lower"],
+                "confidence_interval_upper": prediction_result["confidence_interval_upper"],
                 "model_used": prediction_result["model_used"],
                 "features_used": prediction_result["features_used"],
             }
@@ -143,7 +133,7 @@ class AnalysisService:
             logger.error(f"Error generating prediction for {symbol}: {e}")
             raise
 
-    def get_current_sentiment(self, symbol: str = None) -> Dict[str, Any]:
+    def get_current_sentiment(self, symbol: Optional[str] = None) -> Dict[str, Any]:
         """Get current market sentiment."""
         try:
             logger.info("Getting current market sentiment")
@@ -156,7 +146,7 @@ class AnalysisService:
                 query = (
                     select(NewsArticle)
                     .where(NewsArticle.published_at >= start_date)
-                    .order_by(NewsArticle.published_at.desc())
+                    .order_by(desc(NewsArticle.published_at))
                 )
 
                 if symbol:
@@ -168,8 +158,7 @@ class AnalysisService:
                         a
                         for a in articles
                         if any(
-                            keyword in a.title.lower() or keyword in a.content.lower()
-                            for keyword in symbol_keywords
+                            keyword in a.title.lower() or keyword in a.content.lower() for keyword in symbol_keywords
                         )
                     ]
                 else:
@@ -343,33 +332,21 @@ class AnalysisService:
 
         return trend_type, confidence_score
 
-    def _generate_trend_description(
-        self, symbol: str, trend_type: str, indicators: Dict[str, float]
-    ) -> str:
+    def _generate_trend_description(self, symbol: str, trend_type: str, indicators: Dict[str, float]) -> str:
         """Generate human-readable trend description."""
         _current_price = indicators.get("sma_20", 0)
 
         if trend_type == "bullish":
-            description = (
-                f"{symbol} shows bullish momentum with strong technical indicators. "
-            )
+            description = f"{symbol} shows bullish momentum with strong technical indicators. "
             description += "Price is above key moving averages and MACD is positive. "
-            description += (
-                f"RSI at {indicators.get('rsi', 0):.1f} indicates healthy momentum."
-            )
+            description += f"RSI at {indicators.get('rsi', 0):.1f} indicates healthy momentum."
         elif trend_type == "bearish":
-            description = (
-                f"{symbol} shows bearish pressure with weakening technical indicators. "
-            )
+            description = f"{symbol} shows bearish pressure with weakening technical indicators. "
             description += "Price is below key moving averages and MACD is negative. "
-            description += (
-                f"RSI at {indicators.get('rsi', 0):.1f} suggests potential reversal."
-            )
+            description += f"RSI at {indicators.get('rsi', 0):.1f} suggests potential reversal."
         else:
             description = f"{symbol} is in a neutral consolidation phase. "
-            description += (
-                "Technical indicators are mixed, suggesting indecision in the market."
-            )
+            description += "Technical indicators are mixed, suggesting indecision in the market."
 
         return description
 
@@ -413,9 +390,7 @@ class AnalysisService:
             "features_used": {"sma_short": sma_short, "sma_long": sma_long},
         }
 
-    def _predict_volatility(
-        self, df: pd.DataFrame, horizon_days: int
-    ) -> Dict[str, Any]:
+    def _predict_volatility(self, df: pd.DataFrame, horizon_days: int) -> Dict[str, Any]:
         """Predict future volatility."""
         # Calculate historical volatility
         returns = df["close_price"].pct_change().dropna()

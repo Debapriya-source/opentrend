@@ -1,10 +1,10 @@
 """Analysis endpoints for trend analysis and predictions."""
 
-from typing import Any
+from typing import Any, Optional
 from datetime import datetime, timedelta
 import json
 from fastapi import APIRouter, Depends, HTTPException, status
-from sqlmodel import Session, select
+from sqlmodel import Session, select, desc, asc
 
 from app.database.connection import get_session
 from app.database.models import TrendAnalysis, Prediction, User, MarketData
@@ -189,9 +189,9 @@ def generate_prediction(
 
 @router.get("/trends")
 def get_trend_analyses(
-    symbol: str = None,
-    trend_type: str = None,
-    timeframe: str = None,
+    symbol: Optional[str] = None,
+    trend_type: Optional[str] = None,
+    timeframe: Optional[str] = None,
     limit: int = 50,
     current_user: User = Depends(get_current_active_user),
     session: Session = Depends(get_session),
@@ -206,7 +206,7 @@ def get_trend_analyses(
     if timeframe:
         query = query.where(TrendAnalysis.timeframe == timeframe)
 
-    query = query.order_by(TrendAnalysis.analysis_date.desc()).limit(limit)
+    query = query.order_by(desc(TrendAnalysis.analysis_date)).limit(limit)
 
     analyses = session.exec(query).all()
 
@@ -218,8 +218,8 @@ def get_trend_analyses(
 
 @router.get("/predictions")
 def get_predictions(
-    symbol: str = None,
-    prediction_type: str = None,
+    symbol: Optional[str] = None,
+    prediction_type: Optional[str] = None,
     limit: int = 50,
     current_user: User = Depends(get_current_active_user),
     session: Session = Depends(get_session),
@@ -232,7 +232,7 @@ def get_predictions(
     if prediction_type:
         query = query.where(Prediction.prediction_type == prediction_type)
 
-    query = query.order_by(Prediction.prediction_date.desc()).limit(limit)
+    query = query.order_by(desc(Prediction.prediction_date)).limit(limit)
 
     predictions = session.exec(query).all()
 
@@ -259,7 +259,7 @@ def get_market_data(
         query = (
             select(MarketData)
             .where(MarketData.symbol == symbol, MarketData.timestamp >= start_date, MarketData.timestamp <= end_date)
-            .order_by(MarketData.timestamp.asc())
+            .order_by(asc(MarketData.timestamp))
         )
 
         market_data = session.exec(query).all()
@@ -275,17 +275,15 @@ def get_market_data(
         # Convert to list of dictionaries
         data_list = []
         for data_point in market_data:
-            data_list.append(
-                {
-                    "date": data_point.timestamp.strftime("%Y-%m-%d"),
-                    "open": float(data_point.open_price),
-                    "high": float(data_point.high_price),
-                    "low": float(data_point.low_price),
-                    "close": float(data_point.close_price),
-                    "volume": int(data_point.volume),
-                    "source": data_point.source,
-                }
-            )
+            data_list.append({
+                "date": data_point.timestamp.strftime("%Y-%m-%d"),
+                "open": float(data_point.open_price),
+                "high": float(data_point.high_price),
+                "low": float(data_point.low_price),
+                "close": float(data_point.close_price),
+                "volume": int(data_point.volume),
+                "source": data_point.source,
+            })
 
         return {
             "symbol": symbol,
@@ -303,7 +301,7 @@ def get_market_data(
 
 @router.get("/sentiment/current")
 def get_current_sentiment(
-    symbol: str = None,
+    symbol: Optional[str] = None,
     current_user: User = Depends(get_current_active_user),
     session: Session = Depends(get_session),
 ) -> Any:

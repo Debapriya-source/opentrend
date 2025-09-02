@@ -64,16 +64,26 @@ def test_connections() -> bool:
             else:
                 session.execute(text("SELECT 1"))
                 logger.info("PostgreSQL connection successful")
-        
+
         # Test Redis (optional for development)
         try:
             redis_client.ping()
             logger.info("Redis connection successful")
         except Exception as redis_error:
             logger.warning(f"Redis connection failed (optional): {redis_error}")
-        
+
+        # Test InfluxDB (optional for development)
+        try:
+            from app.services.influxdb_client import influxdb_service
+
+            if influxdb_service.is_connected():
+                logger.info("InfluxDB connection successful")
+            else:
+                logger.warning("InfluxDB connection failed (optional)")
+        except Exception as influx_error:
+            logger.warning(f"InfluxDB connection test failed (optional): {influx_error}")
+
         return True
     except Exception as e:
         logger.error(f"Database connection test failed: {e}")
         return False
-
