@@ -1847,3 +1847,59 @@ DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-c
 2025-09-03 01:47:13 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-crypto-9-2-2025-video
 2025-09-03 01:47:16 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 4 news articles
 2025-09-03 01:47:16 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 4 duplicates)
+2025-09-03 02:18:01 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 02:18:07 | INFO     | app.services.llm_service:_initialize_models:27 - Loading sentiment analysis model...
+2025-09-03 02:18:09 | INFO     | app.services.llm_service:_initialize_models:36 - Sentiment analysis model initialized successfully
+2025-09-03 02:18:09 | INFO     | app.services.llm_service:_initialize_models:40 - Text generation disabled for performance
+2025-09-03 02:18:11 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-03 02:18:16 | INFO     | app.services.llm_service:_initialize_models:27 - Loading sentiment analysis model...
+2025-09-03 02:18:18 | INFO     | app.services.llm_service:_initialize_models:36 - Sentiment analysis model initialized successfully
+2025-09-03 02:18:18 | INFO     | app.services.llm_service:_initialize_models:40 - Text generation disabled for performance
+2025-09-03 02:18:18 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-03 02:18:18 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:18:18 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:18:18 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:18:18 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-03 02:18:18 | INFO     | app.database.connection:create_db_and_tables:31 - Database tables created successfully
+2025-09-03 02:18:18 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-03 02:18:18 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-03 02:18:18 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-03 02:18:18 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-03 02:18:18 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-03 02:18:18 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-08-26 20:48:18.503546 to 2025-09-02 20:48:18.503546
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 4 data points for AAPL
+2025-09-03 02:18:20 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-08-26 20:48:20.271511 to 2025-09-02 20:48:20.271511
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 4 data points for GOOGL
+2025-09-03 02:18:20 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-08-26 20:48:20.558938 to 2025-09-02 20:48:20.558938
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 4 data points for MSFT
+2025-09-03 02:18:20 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-03 02:18:20 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-08-26 20:48:20.868722 to 2025-09-02 20:48:20.868722
+2025-09-03 02:18:21 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 4 data points for TSLA
+2025-09-03 02:18:21 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-03 02:18:21 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-03 02:18:21 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-03 02:18:21 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-03 02:18:24 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-02/trump-tied-crypto-token-opens-for-trading-video
+2025-09-03 02:18:27 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 3 news articles
+2025-09-03 02:18:27 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 3 duplicates)
+2025-09-03 02:18:27 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:18:27 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:18:27 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:19:02 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:19:02 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:19:02 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:19:09 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:19:09 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:19:09 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:19:10 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:19:10 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:19:10 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:19:24 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for AAPL with 30 days horizon
+2025-09-03 02:19:24 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 250 data points
+2025-09-03 02:19:24 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for AAPL: 1.13% change predicted
+2025-09-03 02:20:38 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-03 02:20:38 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-03 02:20:38 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-03 02:20:54 | ERROR    | app.database.connection:get_session:43 - Database session error: 404: No market data found for BHEL
