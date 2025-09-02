@@ -1434,3 +1434,27 @@ DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-c
 2025-09-03 01:23:42 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
 2025-09-03 01:23:42 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
 2025-09-03 01:23:42 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
+2025-09-03 01:26:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: GOOGL
+2025-09-03 01:26:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for GOOGL: Found
+2025-09-03 01:26:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for GOOGL
+2025-09-03 01:26:54 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for GOOGL
+2025-09-03 01:26:54 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for GOOGL: price
+2025-09-03 01:26:54 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for GOOGL
+2025-09-03 01:27:50 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: GOOGL
+2025-09-03 01:27:50 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for GOOGL: Found
+2025-09-03 01:27:50 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for GOOGL
+2025-09-03 01:27:50 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for GOOGL
+2025-09-03 01:27:50 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for GOOGL: price
+2025-09-03 01:27:50 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for GOOGL
+2025-09-03 01:27:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: GOOGL
+2025-09-03 01:27:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for GOOGL: Found
+2025-09-03 01:27:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for GOOGL
+2025-09-03 01:27:58 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for GOOGL
+2025-09-03 01:27:58 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for GOOGL: price
+2025-09-03 01:27:58 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for GOOGL
+2025-09-03 01:28:13 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:98 - Starting prediction generation for symbol: AAPL
+2025-09-03 01:28:13 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:105 - Existing data check for AAPL: Found
+2025-09-03 01:28:13 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:152 - Starting prediction generation with AnalysisService for AAPL
+2025-09-03 01:28:13 | INFO     | app.services.analysis_service:generate_prediction:87 - Generating price prediction for AAPL
+2025-09-03 01:28:13 | INFO     | app.services.analysis_service:generate_prediction:129 - Prediction generated for AAPL: price
+2025-09-03 01:28:13 | INFO     | app.api.v1.endpoints.analysis:generate_prediction:155 - Prediction generation completed for AAPL
