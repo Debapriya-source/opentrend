@@ -217,7 +217,9 @@ class ForecastingService:
                     forecast_points.append(prediction.item())
 
                     # Update sequence for next prediction
-                    new_sequence = torch.cat([current_sequence[:, 1:, :], prediction.unsqueeze(0).unsqueeze(2)], dim=1)
+                    # prediction shape: (batch=1, features=1) -> reshape to (1, 1, 1) to match (batch, seq_len, features)
+                    new_step = prediction.view(1, 1, 1)
+                    new_sequence = torch.cat([current_sequence[:, 1:, :], new_step], dim=1)
                     current_sequence = new_sequence
 
             # Inverse transform predictions

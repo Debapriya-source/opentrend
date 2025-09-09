@@ -130,3 +130,28 @@ DETAIL:  Key (url)=(https://www.bloomberg.com/news/videos/2025-09-02/bloomberg-c
 2025-09-03 01:38:05 | ERROR    | app.services.llm_service:_initialize_models:53 - Error initializing LLM models: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
 2025-09-03 01:38:05 | ERROR    | app.services.llm_service:_initialize_fallback_models:68 - Error initializing fallback models: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
 2025-09-03 02:20:54 | ERROR    | app.database.connection:get_session:43 - Database session error: 404: No market data found for BHEL
+2025-09-09 18:20:41 | ERROR    | app.services.influxdb_client:write_market_data:80 - Error writing market data to InfluxDB: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Tue, 09 Sep 2025 12:50:41 GMT', 'Content-Length': '55'})
+HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
+
+2025-09-09 18:20:42 | ERROR    | app.services.influxdb_client:write_market_data:80 - Error writing market data to InfluxDB: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Tue, 09 Sep 2025 12:50:42 GMT', 'Content-Length': '55'})
+HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
+
+2025-09-09 18:20:42 | ERROR    | app.services.influxdb_client:write_market_data:80 - Error writing market data to InfluxDB: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Tue, 09 Sep 2025 12:50:42 GMT', 'Content-Length': '55'})
+HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
+
+2025-09-09 18:20:43 | ERROR    | app.services.influxdb_client:write_market_data:80 - Error writing market data to InfluxDB: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.12', 'X-Platform-Error-Code': 'unauthorized', 'Date': 'Tue, 09 Sep 2025 12:50:43 GMT', 'Content-Length': '55'})
+HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
+
+2025-09-09 18:29:13 | ERROR    | app.services.forecasting_service:forecast_with_lstm:274 - Error in LSTM forecast for AAPL: Tensors must have same number of dimensions: got 3 and 4
+2025-09-09 18:29:13 | ERROR    | app.database.connection:get_session:43 - Database session error: 400: LSTM forecast failed: Tensors must have same number of dimensions: got 3 and 4
+2025-09-09 18:29:42 | ERROR    | app.services.forecasting_service:forecast_with_lstm:274 - Error in LSTM forecast for AAPL: Tensors must have same number of dimensions: got 3 and 4
+2025-09-09 18:52:48 | ERROR    | app.database.connection:get_session:43 - Database session error: 401: Could not validate credentials
+2025-09-09 18:52:48 | ERROR    | app.database.connection:get_session:43 - Database session error: 401: Could not validate credentials

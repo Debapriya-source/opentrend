@@ -93,7 +93,7 @@ def forecast_with_ensemble(
         )
 
 
-@router.get("/compare/{symbol}")
+@router.api_route("/compare/{symbol}", methods=["GET", "POST"])
 def compare_forecasting_models(
     symbol: str,
     horizon_days: int = Query(default=30, ge=1, le=90, description="Forecast horizon in days"),
