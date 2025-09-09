@@ -2438,3 +2438,250 @@ HTTP response body: {"code":"unauthorized","message":"unauthorized access"}
 2025-09-09 19:14:19 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.ft.com/content/6f3c1b4a-a6b3-449a-870e-dd89521c575b: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
 2025-09-09 19:14:19 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 2 news articles
 2025-09-09 19:14:19 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 2 duplicates)
+2025-09-10 00:29:47 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-10 00:29:58 | INFO     | app.services.llm_service:_initialize_models:27 - Loading sentiment analysis model...
+2025-09-10 00:30:00 | INFO     | app.services.llm_service:_initialize_models:36 - Sentiment analysis model initialized successfully
+2025-09-10 00:30:00 | INFO     | app.services.llm_service:_initialize_models:40 - Text generation disabled for performance
+2025-09-10 00:30:01 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-10 00:30:01 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:30:01 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:30:01 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:30:01 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-10 00:30:01 | INFO     | app.database.connection:create_db_and_tables:31 - Database tables created successfully
+2025-09-10 00:30:01 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-10 00:30:01 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-10 00:30:01 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-10 00:30:01 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-10 00:30:01 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-10 00:30:01 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-09-02 19:00:01.105643 to 2025-09-09 19:00:01.105643
+2025-09-10 00:30:02 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for AAPL
+2025-09-10 00:30:02 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-10 00:30:02 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-09-02 19:00:02.931248 to 2025-09-09 19:00:02.931248
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for GOOGL
+2025-09-10 00:30:03 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-09-02 19:00:03.251737 to 2025-09-09 19:00:03.251737
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for MSFT
+2025-09-10 00:30:03 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-09-02 19:00:03.681432 to 2025-09-09 19:00:03.681432
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for TSLA
+2025-09-10 00:30:03 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-10 00:30:03 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-10 00:30:03 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-10 00:30:03 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-10 00:30:06 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets
+2025-09-10 00:30:07 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds
+2025-09-10 00:30:07 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits
+2025-09-10 00:30:08 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video
+2025-09-10 00:30:12 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 6 news articles
+2025-09-10 00:30:12 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 6 duplicates)
+2025-09-10 00:30:23 | INFO     | app.main:lifespan:53 - Shutting down OpenTrend AI application...
+2025-09-10 00:30:23 | INFO     | app.services.scheduler:stop_scheduler:42 - Stopping data scheduler...
+2025-09-10 00:30:23 | INFO     | app.main:lifespan:55 - Background data scheduler stopped
+2025-09-10 00:30:27 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-10 00:30:33 | INFO     | app.services.llm_service:_initialize_models:27 - Loading sentiment analysis model...
+2025-09-10 00:30:35 | INFO     | app.services.llm_service:_initialize_models:36 - Sentiment analysis model initialized successfully
+2025-09-10 00:30:35 | INFO     | app.services.llm_service:_initialize_models:40 - Text generation disabled for performance
+2025-09-10 00:30:35 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-10 00:30:35 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:30:35 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:30:35 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:30:35 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-10 00:30:35 | INFO     | app.database.connection:create_db_and_tables:31 - Database tables created successfully
+2025-09-10 00:30:35 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-10 00:30:35 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-10 00:30:35 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-10 00:30:35 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-10 00:30:35 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-10 00:30:35 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-09-02 19:00:35.594127 to 2025-09-09 19:00:35.594127
+2025-09-10 00:30:37 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for AAPL
+2025-09-10 00:30:37 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-10 00:30:37 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-09-02 19:00:37.653441 to 2025-09-09 19:00:37.653441
+2025-09-10 00:30:37 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for GOOGL
+2025-09-10 00:30:37 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-10 00:30:37 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-09-02 19:00:37.956720 to 2025-09-09 19:00:37.956720
+2025-09-10 00:30:38 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for MSFT
+2025-09-10 00:30:38 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-10 00:30:38 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-09-02 19:00:38.274890 to 2025-09-09 19:00:38.274890
+2025-09-10 00:30:38 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for TSLA
+2025-09-10 00:30:38 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-10 00:30:38 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-10 00:30:38 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-10 00:30:38 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-10 00:30:40 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-09/bloomberg-crypto-9-9-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-09/bloomberg-crypto-9-9-2025-video
+2025-09-10 00:30:40 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets
+2025-09-10 00:30:41 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds
+2025-09-10 00:30:41 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits
+2025-09-10 00:30:42 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video
+2025-09-10 00:30:46 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 6 news articles
+2025-09-10 00:30:46 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 6 duplicates)
+2025-09-10 00:30:53 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:30:53 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:30:53 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:34:51 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:34:51 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:34:51 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:34:54 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:34:54 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:34:54 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:34:57 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:34:57 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:34:57 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:35:06 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:35:06 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:35:06 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:35:51 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 00:35:52 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:35:52 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 00:37:01 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 00:37:08 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -10.21% change predicted
+2025-09-10 00:37:41 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for TSLA
+2025-09-10 00:37:41 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 00:37:41 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:37:41 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 00:37:41 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 00:37:48 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -9.78% change predicted
+2025-09-10 00:37:49 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for TSLA: 2.91% change predicted
+2025-09-10 00:38:22 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 00:38:22 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:38:22 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 00:38:22 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -6.40% change predicted
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for TSLA
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 00:38:29 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 00:38:36 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -0.98% change predicted
+2025-09-10 00:38:36 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for TSLA: 5.55% change predicted
+2025-09-10 00:39:40 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for GOOGL with 30 days horizon
+2025-09-10 00:39:40 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:39:40 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for GOOGL: 3.68% change predicted
+2025-09-10 00:39:40 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for GOOGL
+2025-09-10 00:39:46 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for GOOGL: -20.29% change predicted
+2025-09-10 00:39:46 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for GOOGL
+2025-09-10 00:39:46 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for GOOGL with 30 days horizon
+2025-09-10 00:39:46 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:39:47 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for GOOGL: 3.68% change predicted
+2025-09-10 00:39:47 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for GOOGL
+2025-09-10 00:39:53 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for GOOGL: -21.22% change predicted
+2025-09-10 00:39:53 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for GOOGL: -5.37% change predicted
+2025-09-10 00:44:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 20 days horizon
+2025-09-10 00:44:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:44:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 14.75% change predicted
+2025-09-10 00:44:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for GOOGL with 20 days horizon
+2025-09-10 00:44:31 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:44:31 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for GOOGL: 6.72% change predicted
+2025-09-10 00:44:54 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:44:54 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:44:54 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:51:14 | INFO     | app.services.influxdb_client:_initialize_client:34 - InfluxDB client initialized successfully
+2025-09-10 00:51:22 | INFO     | app.services.llm_service:_initialize_models:27 - Loading sentiment analysis model...
+2025-09-10 00:51:24 | INFO     | app.services.llm_service:_initialize_models:36 - Sentiment analysis model initialized successfully
+2025-09-10 00:51:24 | INFO     | app.services.llm_service:_initialize_models:40 - Text generation disabled for performance
+2025-09-10 00:51:24 | INFO     | app.main:lifespan:21 - Starting OpenTrend AI application...
+2025-09-10 00:51:24 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:51:24 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:51:24 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:51:24 | INFO     | app.main:lifespan:29 - All database connections successful
+2025-09-10 00:51:24 | INFO     | app.database.connection:create_db_and_tables:31 - Database tables created successfully
+2025-09-10 00:51:24 | INFO     | app.main:lifespan:38 - Database tables created successfully
+2025-09-10 00:51:24 | INFO     | app.main:lifespan:46 - Background data scheduler started
+2025-09-10 00:51:24 | INFO     | app.main:lifespan:48 - OpenTrend AI application started successfully
+2025-09-10 00:51:24 | INFO     | app.services.scheduler:start_scheduler:29 - Starting data scheduler...
+2025-09-10 00:51:24 | INFO     | app.services.scheduler:_market_data_updater:54 - Running scheduled market data update...
+2025-09-10 00:51:24 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for AAPL from 2025-09-02 19:21:24.626142 to 2025-09-09 19:21:24.626142
+2025-09-10 00:51:25 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for AAPL
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for AAPL
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for GOOGL from 2025-09-02 19:21:26.004406 to 2025-09-09 19:21:26.004406
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for GOOGL
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for GOOGL
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for MSFT from 2025-09-02 19:21:26.298680 to 2025-09-09 19:21:26.298680
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for MSFT
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for MSFT
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:22 - Collecting market data for TSLA from 2025-09-02 19:21:26.609450 to 2025-09-09 19:21:26.609450
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_market_data:42 - Collected 6 data points for TSLA
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_update_symbol_data:199 - No new data points for TSLA
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_market_data_updater:62 - Updated market data for 4 symbols
+2025-09-10 00:51:26 | INFO     | app.services.scheduler:_news_updater:74 - Running scheduled news update...
+2025-09-10 00:51:26 | INFO     | app.services.data_collector:collect_news_articles:54 - Collecting news articles for keywords: ['stock market', 'trading', 'finance', 'economy', 'earnings']
+2025-09-10 00:51:29 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/peru-bets-it-can-navigate-us-china-tensions-grow-export-markets
+2025-09-10 00:51:29 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/bank-of-france-sees-sustained-growth-despite-political-headwinds
+2025-09-10 00:51:29 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/articles/2025-09-09/citi-sees-investment-banking-fees-markets-up-mid-single-digits
+2025-09-10 00:51:30 | WARNING  | app.services.data_collector:_extract_article_content:168 - Error extracting content from https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video: 403 Client Error: Forbidden for url: https://www.bloomberg.com/news/videos/2025-09-09/open-interest-9-9-2025-video
+2025-09-10 00:51:34 | INFO     | app.services.data_collector:collect_news_articles:74 - Collected 6 news articles
+2025-09-10 00:51:34 | INFO     | app.services.scheduler:_news_updater:106 - Added 0 new news articles (skipped 6 duplicates)
+2025-09-10 00:57:18 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:57:18 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:57:18 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:57:27 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:57:27 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:57:27 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:57:30 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:57:30 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:57:30 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 00:57:32 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 00:58:12 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 69 days horizon
+2025-09-10 00:58:12 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:58:13 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 39.96% change predicted
+2025-09-10 00:59:35 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for TSLA
+2025-09-10 00:59:35 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 00:59:35 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 00:59:35 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 00:59:35 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 00:59:42 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -2.05% change predicted
+2025-09-10 00:59:42 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for TSLA: 5.23% change predicted
+2025-09-10 01:00:08 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 01:00:16 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -15.51% change predicted
+2025-09-10 01:01:06 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 01:01:06 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:01:06 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 01:01:06 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -3.70% change predicted
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for TSLA
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 30 days horizon
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 1.87% change predicted
+2025-09-10 01:01:13 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 01:01:20 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -5.93% change predicted
+2025-09-10 01:01:20 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for TSLA: 4.07% change predicted
+2025-09-10 01:07:23 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for AAPL
+2025-09-10 01:07:23 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for AAPL with 14 days horizon
+2025-09-10 01:07:23 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:07:23 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for AAPL: 0.03% change predicted
+2025-09-10 01:07:23 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for AAPL
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for AAPL: 2.43% change predicted
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for AAPL: 0.27% change predicted
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for TSLA
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 14 days horizon
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 14.37% change predicted
+2025-09-10 01:07:30 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for TSLA
+2025-09-10 01:07:36 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for TSLA: -0.11% change predicted
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for TSLA: 10.81% change predicted
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_ensemble:282 - Starting ensemble forecast for GOOGL
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for GOOGL with 14 days horizon
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for GOOGL: 4.81% change predicted
+2025-09-10 01:07:37 | INFO     | app.services.forecasting_service:forecast_with_lstm:152 - Starting LSTM forecast for GOOGL
+2025-09-10 01:07:43 | INFO     | app.services.forecasting_service:forecast_with_lstm:272 - LSTM forecast completed for GOOGL: -15.36% change predicted
+2025-09-10 01:07:44 | INFO     | app.services.forecasting_service:forecast_ensemble:356 - Ensemble forecast completed for GOOGL: -3.16% change predicted
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for AAPL with 14 days horizon
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for AAPL: 0.03% change predicted
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for TSLA with 14 days horizon
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for TSLA: 14.37% change predicted
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:55 - Starting Prophet forecast for GOOGL with 14 days horizon
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:85 - Training Prophet model with 255 data points
+2025-09-10 01:08:02 | INFO     | app.services.forecasting_service:forecast_with_prophet:142 - Prophet forecast completed for GOOGL: 4.81% change predicted
+2025-09-10 01:08:23 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 01:08:23 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 01:08:23 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful
+2025-09-10 01:08:27 | INFO     | app.database.connection:test_connections:65 - PostgreSQL connection successful
+2025-09-10 01:08:27 | INFO     | app.database.connection:test_connections:70 - Redis connection successful
+2025-09-10 01:08:27 | INFO     | app.database.connection:test_connections:79 - InfluxDB connection successful

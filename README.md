@@ -279,6 +279,18 @@ docker-compose logs -f
 docker-compose down
 ```
 
+### Start Advanced Frontend (after containers are up)
+
+```bash
+# Option A: Launch via helper script (uses port 8501)
+python run_advanced_frontend.py
+
+# Option B: Launch directly with Streamlit
+streamlit run frontend/advanced_streamlit_app.py --server.port 8501
+```
+
+The frontend connects to the backend at `http://localhost:8000` by default (exposed by Compose). See `frontend/README.md` for details and configuration options.
+
 ### Manual Docker Build
 
 ```bash
